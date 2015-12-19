@@ -10,14 +10,13 @@ define(['./app'], function(app) {
 			//home page
 			.state('home', {
 				url: '/home',
-				// views: {
-				// 	'menuContent': {
-				    templateUrl: 'templates/home.html'
-					// }
-				// }	
+				templateUrl: 'templates/home.html'
+			})
+			.state('base', {
+				url: '/base',
+				templateUrl: 'templates/base.html'
 			});
 
-		// $urlRouterProvider.otherwise('/menu/home');
         $urlRouterProvider.otherwise('/home');
 	})
 })

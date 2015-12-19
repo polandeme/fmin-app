@@ -1,12 +1,33 @@
+//fixed default .row 
+.cell-wrapper {
+  height: 100%;
+  padding: 0;
+	flex-flow: column wrap;
+  // border: 1px solid red;
+}
+
 .cell-item {
 	text-align: center;
   	border: 1px solid #eee;
-  	height: 50px;
+  	height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction:column;
+    // flex: 1;
+  	// height: 30%;
 }
-.cell-item:nth-child(4n-2) {
-	border-left: 0;
-	border-right: 0;
+.cell-item:nth-child(1) {
+  background: gray;
 }
-.cell-item:nth-child(4n-1) {
-	border-right: 0;
+.cell-item:nth-child(4) {
+  background: red;
+}
+.cell-item a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
