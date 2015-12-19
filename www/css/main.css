@@ -30,4 +30,49 @@ div {
   height: 100%;
   align-items: center;
   justify-content: center;
+  font-size: 2rem;
+}
+.base-header-bar {
+  height: 5%;
+}
+.pause-btn {
+  text-align: left;
+  border: none;
+}
+.time-down {
+  font-size: 0;
+  text-align: center;
+}
+.time-down-num,
+.time-unit {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #D0D102;
+}
+.time-unit {
+  font-size: 34px;
+}
+.score {
+  font-size: 30px;
+  text-align: right;
+}
+.base-cell-warp {
+  top: 5%;
+  height: 90%;
+  margin-top: 2%;
+}
+.base-cell-gruop {
+  height: 100%;
+  flex-flow: row wrap;
+}
+.base-cell-item {
+  display: flex;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.base-cell-item {
+  border: 1px solid blue;
 }
