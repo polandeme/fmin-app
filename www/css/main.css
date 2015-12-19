@@ -34,6 +34,7 @@ div {
 }
 .base-header-bar {
   height: 5%;
+  border: none;
 }
 .pause-btn {
   text-align: left;
@@ -72,7 +73,16 @@ div {
   height: 25%;
   justify-content: center;
   align-items: center;
-}
-.base-cell-item {
   border: 1px solid blue;
+  border-bottom: none;
+}
+.base-cell-item:nth-child(4n-2) {
+  border-left: 0;
+  border-right: 0;
+}
+.base-cell-item:nth-child(4n-1) {
+  border-right: 0;
+}
+.has-bottom-border {
+  border-bottom: 1px solid blue;
 }
