@@ -35,6 +35,10 @@ div {
 .base-header-bar {
   height: 5%;
   border: none;
+  border: 0px !important;
+  border-bottom-color: transparent !important;
+  background-image: none !important;
+  border-bottom: none !important;
 }
 .pause-btn {
   text-align: left;
@@ -67,6 +71,7 @@ div {
 .base-cell-gruop {
   height: 100%;
   flex-flow: row wrap;
+  padding: 0;
 }
 .base-cell-item {
   display: flex;

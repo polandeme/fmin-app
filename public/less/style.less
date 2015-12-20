@@ -1,3 +1,5 @@
+@bg-color: #c3DB51;
+@grid-border-color: #7787C5;
 //fixed default .row 
 .cell-wrapper {
   height: 100%;
@@ -8,7 +10,7 @@
 
 .cell-item {
 	text-align: center;
-  border: 1px solid #eee;
+  border: 1px solid #EEE;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -33,6 +35,9 @@
 }
 
 //base.less 
+.base-wrap {
+  background: @bg-color;
+}
 .base-header-bar {
   height: 5%;
   border: none;
@@ -40,6 +45,7 @@
   border-bottom-color: transparent !important;
   background-image: none !important;
   border-bottom: none !important;
+  background-color: @bg-color;
 }
 .pause-btn {
   text-align: left;
@@ -52,15 +58,25 @@
   font-size: 0;
   text-align: center;
 }
-.time-down-num, .time-unit {
+.time-down-num, .time-unit, .time-down-ms-num {
   text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: #D0D102;
+  // color: #D0D102;
+  color: red;
+}
+.time-down-ms-num {
+  display: inline-block;
+  width: 2.1rem;
 }
 .time-unit {
   font-size: 34px;
+}
+.time-down-dot {
+  color: #000;
+  font-size: 23px;
+  font-weight: 600;
 }
 .score {
   font-size: 30px;
@@ -71,6 +87,7 @@
   top: 5%;
   height: 90%;
   margin-top: 2%;
+  background-color: @bg-color;
   // border: 1px solid blue;
 }
 .base-cell-gruop {
@@ -83,7 +100,7 @@
   height: 25%;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
+  border: 1px solid @grid-border-color;
   border-bottom: none;
 }
 .base-cell-item:nth-child(4n-2) {
@@ -95,4 +112,9 @@
 }
 .has-bottom-border {
   border-bottom: 1px solid blue;
+}
+.base-cell-item span {
+  color: #E0E0F8;
+  font-size: 40px;
+  font-weight: 600;
 }

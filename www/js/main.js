@@ -12,12 +12,14 @@ require.config({
         angularSanitize: '../lib/ionic/js/angular/angular-sanitize',
         uiRouter: '../lib/ionic/js/angular-ui/angular-ui-router',
         ionic: '../lib/ionic/js/ionic',
-        angularIonic: '../lib/ionic/js/ionic-angular'
+        angularIonic: '../lib/ionic/js/ionic-angular',
+        jquery: './lib/jquery-1.11.3.min'
         // text: '../bower_components/requirejs-text/text'
     },
     shim: {
         'angular' : {'exports' : 'angular'},
         'angularAnimate' : ['angular'],
+        'jquery': '$',
         // 'angularTouch' : ['angular'],
         'angularSanitize' : ['angular'],
         'uiRouter' : ['angular'],
@@ -34,7 +36,8 @@ require( [
     'ionic',
     'angular',
     'app',
-    'routes'], function(cordova, ionic, angular, app) {
+    'jquery',
+    'routes'], function(cordova, ionic, angular, app, $) {
     'use strict';
 
     var start  = function(){

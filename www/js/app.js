@@ -24,9 +24,11 @@
 // })
 define(['angular',
         'angularIonic',
+        'base/baseModule',
        ], function(ng) {
         'use strict';
         return ng.module('fmin', [
-          'ionic'
+          'ionic',
+          'fmin.baseModule'
         ]);
 });
