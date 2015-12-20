@@ -1,9 +1,9 @@
-define(function() {
+define(['jqueryColor'], function() {
 	var baseService = function() {
 		// var girdItme = '<li class="col col-25 base-cell-item"></li>'
 		var itemGroup = $('.base-cell-item');
 		var obj = {
-
+			score: 0,
 			createRandomNum: function(base) {
 				var base = base || 10;
 				var num_one = Math.floor(Math.random() * base);
@@ -46,16 +46,16 @@ define(function() {
 				$('body').on('click', '.right-cell', function() {
 					// count++;
 					var score = $('.score').text();
-					// score++;
-					// $('.score').text(score);
-					// scoreAnim();
+					score++;
+					$('.score').text(score);
+					self.sucessClickAnim();
 					var curNum = parseInt($('.right-cell').text());
 					$(this).html('').removeClass('has-num right-cell');
 					self.reDraw(curNum);
 				});
 				$('body').on('click', '.base-cell-item:not(.right-cell)', function() {
 					var that = $(this);
-					// errorClickHandle(that);
+					self.errorClickAnim(that);
 				})
 			},
 			randomAgain: function(curNum, base) {
@@ -85,7 +85,7 @@ define(function() {
 
 			//倒计时模块 
 			timeDown: function() {
-				var counter = 9;
+				var counter = 59;
 				var timer = setInterval(function() {
 					if(counter <= 1) {
 						clearInterval(timer);
@@ -97,15 +97,16 @@ define(function() {
 
 			msTimeDown: function() {
 				var counter = 100;
+				var self = this;
 				// var secTime = parseInt($('.time-down-num').text());
 				var timer = setInterval(function() {
 					var secTime = parseInt($('.time-down-num').text());
-					console.log(secTime);
 					if(counter <= 1) {
 						if(secTime > 0) {
 							counter = 100;
 						} else {
 							clearInterval(timer);
+							self.unbindHandleClick();
 						}
 					}
 					--counter; //位置
@@ -122,6 +123,45 @@ define(function() {
 					self.timeDown();
 					self.msTimeDown();
 				})
+			},
+
+			sucessClickAnim: function() {
+				var tar = $('body');
+    			var i = $("<b>").text("+" + 1);
+			    var y = event.pageY, x = event.pageX;
+			    i.css({
+			        top: y-50,
+			        left: x,
+			        "font-size": "24px",
+			        "font-weight": "400",
+			        position: "absolute",
+			        'z-index': '999',	
+
+			        color: "red"
+			    });
+			    tar.append(i);
+			    i.animate({
+			        top: y-150,
+			        left: x,
+			        opacity: 0,
+			        "font-size": "1.4em"
+			    }, 600,function(){ i.remove(); });
+
+			    event.stopPropagation();
+			},
+			errorClickAnim: function(that) {
+				that.animate({
+			        backgroundColor: "red"
+			    }, 150, function() {
+			        var self = that;
+			        setTimeout(function(){
+			                self.css("background", "");
+			        },50);
+			    });
+			},
+			unbindHandleClick: function() {
+				$('body').off('click', '.right-cell');
+				$('body').off('click', '.base-cell-item:not(.right-cell)');
 			}
 
 		}
