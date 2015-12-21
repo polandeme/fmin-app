@@ -2,6 +2,9 @@ define(['jqueryColor'], function() {
 	var baseService = function() {
 		// var girdItme = '<li class="col col-25 base-cell-item"></li>'
 		var itemGroup = $('.base-cell-item');
+		var sTimer = null; // timeInterval timer
+		var msTimer = null; 
+		var totleTime = 60;
 		var obj = {
 			score: 0,
 			createRandomNum: function(base) {
@@ -84,28 +87,41 @@ define(['jqueryColor'], function() {
 			},
 
 			//倒计时模块 
-			timeDown: function() {
-				var counter = 59;
-				var timer = setInterval(function() {
+			timeDown: function(cont) {
+				var cont = cont || false;
+				if(cont) {
+					var counter = $('.time-down-num').text();
+				} else {
+					console.log(cont);
+					var counter = 59;
+					$('.time-down-num').text(59);
+				}
+				sTimer = setInterval(function() {
 					if(counter <= 1) {
-						clearInterval(timer);
+						clearInterval(sTimer);
 					}
 					--counter;
 					$('.time-down-num').text(counter);
 				}, 1000);
 			},
 
-			msTimeDown: function() {
-				var counter = 100;
+			msTimeDown: function(cont) {
+				// var counter = 100;
+				var cont = cont || false;
+				if(cont) {
+					var counter = $('.time-down-ms-num').text();
+				} else {
+					var counter = 100;
+				}
 				var self = this;
 				// var secTime = parseInt($('.time-down-num').text());
-				var timer = setInterval(function() {
+				msTimer = setInterval(function() {
 					var secTime = parseInt($('.time-down-num').text());
 					if(counter <= 1) {
 						if(secTime > 0) {
 							counter = 100;
 						} else {
-							clearInterval(timer);
+							clearInterval(msTimer);
 							self.unbindHandleClick();
 						}
 					}
@@ -115,16 +131,33 @@ define(['jqueryColor'], function() {
 			},
 
 			//start time 点击任意方块开始计时
-			start: function() {
+			start: function(cont) {
 				var self = this;
-				var totleTime = $('.time-down-num').text();
-				$('body').one('click', '.base-cell-item', function() {
-					$('.time-down-num').text(--totleTime);
-					self.timeDown();
-					self.msTimeDown();
-				})
+				var totleTime = totleTime;
+				if(arguments.length == 0) {
+					$('body').on('click', '.base-cell-item', function() {
+						$('.time-down-num').text(--totleTime);
+						self.timeDown();
+						self.msTimeDown();
+						$('body').off('click', '.base-cell-item');
+					})	
+				} else {
+					self.timeDown(cont);
+					self.msTimeDown(cont);
+				}
+
 			},
 
+			pause: function() {
+				window.clearInterval(sTimer);
+				window.clearInterval(msTimer);
+			},
+			reset: function() {
+				this.pause();
+				this.start();
+				$('.time-down-num').text(totleTime);
+				$('.time-down-ms-num').text('00');
+			},
 			sucessClickAnim: function() {
 				var tar = $('body');
     			var i = $("<b>").text("+" + 1);
