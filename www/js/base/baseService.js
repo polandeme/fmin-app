@@ -41,7 +41,6 @@ define(['jqueryColor'], function() {
 				$('.base-cell-item').eq(index_two)
 				               .addClass('has-num wrong-cell')
 				               .html('<span>' + num_two + '</span>');
-				console.log('initGrid');
 			},
 
 			handleClick: function() {
@@ -60,6 +59,19 @@ define(['jqueryColor'], function() {
 					var that = $(this);
 					self.errorClickAnim(that);
 				})
+			},
+			handleBack: function() {
+				alert('use cordova');
+				ionic.Platform.ready(function() {
+					if(window.cordova) {
+						document.addEventListener("backbutton", function() {
+							alert('reset');
+							this.reset();
+						}, false);
+					} else {
+						alert('cordova');
+					}
+				});
 			},
 			randomAgain: function(curNum, base) {
 				var newNum = Math.ceil(Math.random() * 10) + 1;
@@ -154,6 +166,7 @@ define(['jqueryColor'], function() {
 			},
 			reset: function() {
 				this.pause();
+				this.initInsertNum();
 				this.start();
 				$('.time-down-num').text(totleTime);
 				$('.time-down-ms-num').text('00');

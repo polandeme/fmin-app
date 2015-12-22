@@ -1,10 +1,11 @@
 define(function () {
-	return function ($scope, $location, $ionicPopup, baseService) {
-		console.log(baseService);
+	return function ($scope, $location, $ionicPopup, $window, baseService) {
 		baseService.initInsertNum();
 		baseService.handleClick();
 		baseService.start();
-
+		// $window.location.reload()
+		// $scope.reloadPage = $route.reload();
+		baseService.handleBack();
 		$scope.pause = function() {
 			baseService.pause();
 			var popTpl = '<div class="row"> \

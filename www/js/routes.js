@@ -5,15 +5,18 @@ define(['./app'], function(app) {
 			.state('menu', {
 				url: '/menu',
 				abstract: 'true',
+				cache: false,
 				templateUrl: 'templates/index.html'
 			})
 			//home page
 			.state('home', {
 				url: '/home',
+				cache: false,
 				templateUrl: 'templates/home.html'
 			})
 			.state('base', {
 				url: '/base',
+				cache: false,
 				templateUrl: 'templates/base.html'
 			});
 
