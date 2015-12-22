@@ -12,7 +12,7 @@ div {
 }
 .cell-item {
   text-align: center;
-  border: 1px solid #eee;
+  border: 1px solid #EEE;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -32,6 +32,9 @@ div {
   justify-content: center;
   font-size: 2rem;
 }
+.base-wrap {
+  background: #c3DB51;
+}
 .base-header-bar {
   height: 5%;
   border: none;
@@ -39,6 +42,7 @@ div {
   border-bottom-color: transparent !important;
   background-image: none !important;
   border-bottom: none !important;
+  background-color: #c3DB51;
 }
 .pause-btn {
   text-align: left;
@@ -49,15 +53,25 @@ div {
   text-align: center;
 }
 .time-down-num,
-.time-unit {
+.time-unit,
+.time-down-ms-num {
   text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: #D0D102;
+  color: red;
+}
+.time-down-ms-num {
+  display: inline-block;
+  width: 2.1rem;
 }
 .time-unit {
   font-size: 34px;
+}
+.time-down-dot {
+  color: #000;
+  font-size: 23px;
+  font-weight: 600;
 }
 .score {
   font-size: 30px;
@@ -67,6 +81,7 @@ div {
   top: 5%;
   height: 90%;
   margin-top: 2%;
+  background-color: #c3DB51;
 }
 .base-cell-gruop {
   height: 100%;
@@ -78,7 +93,7 @@ div {
   height: 25%;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
+  border: 1px solid #7787C5;
   border-bottom: none;
 }
 .base-cell-item:nth-child(4n-2) {
@@ -90,4 +105,9 @@ div {
 }
 .has-bottom-border {
   border-bottom: 1px solid blue;
+}
+.base-cell-item span {
+  color: #E0E0F8;
+  font-size: 40px;
+  font-weight: 600;
 }

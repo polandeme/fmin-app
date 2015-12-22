@@ -1,6 +1,7 @@
 define(['./app'], function(app) {
 	'use strict';
 	return app.config(function($stateProvider, $urlRouterProvider) {
+		// $state.transitionTo($state.current, $state.$current.params, { reload: true, inherit: true, notify: true });//reloa
 		$stateProvider
 			.state('menu', {
 				url: '/menu',

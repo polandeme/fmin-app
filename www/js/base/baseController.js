@@ -1,5 +1,7 @@
 define(function () {
-	return function ($scope, $location, $ionicPopup, $window, baseService) {
+	return function ($scope, $location, $ionicPopup, baseService) {
+		baseService.unbindHandleClick();
+		baseService.refrest();
 		baseService.initInsertNum();
 		baseService.handleClick();
 		baseService.start();

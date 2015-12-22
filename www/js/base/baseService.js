@@ -44,9 +44,11 @@ define(['jqueryColor'], function() {
 			},
 
 			handleClick: function() {
+				// alert('handleClick');
 				var self = this;
-				$('body').on('click', '.right-cell', function() {
+				$('body').on('click', '.right-cell', function(e) {
 					// count++;
+					// alert('handleClick click right-cell');
 					var score = $('.score').text();
 					score++;
 					$('.score').text(score);
@@ -54,6 +56,9 @@ define(['jqueryColor'], function() {
 					var curNum = parseInt($('.right-cell').text());
 					$(this).html('').removeClass('has-num right-cell');
 					self.reDraw(curNum);
+					// $('body').off('click', '.right-cell');
+
+					// e.stopImmediatePropagation();
 				});
 				$('body').on('click', '.base-cell-item:not(.right-cell)', function() {
 					var that = $(this);
@@ -61,15 +66,15 @@ define(['jqueryColor'], function() {
 				})
 			},
 			handleBack: function() {
-				alert('use cordova');
+				// alert('use cordova');
 				ionic.Platform.ready(function() {
 					if(window.cordova) {
 						document.addEventListener("backbutton", function() {
-							alert('reset');
+							// alert('reset');
 							this.reset();
 						}, false);
 					} else {
-						alert('cordova');
+						// alert('cordova');
 					}
 				});
 			},
@@ -78,6 +83,7 @@ define(['jqueryColor'], function() {
 				return newNum + curNum;
 			},
 			reDraw: function(curNum) {
+				// alert('reDraw');
 				var n = n || 15;
 				var index = Math.floor(Math.random() * n);
 				var num = Math.floor(Math.random() * 10);
@@ -160,16 +166,23 @@ define(['jqueryColor'], function() {
 
 			},
 
+			refrest: function() {
+				clearInterval(sTimer);
+				clearInterval(msTimer);
+				$('body').off('click', '*'); //base-cell-item
+			},
+
 			pause: function() {
 				window.clearInterval(sTimer);
 				window.clearInterval(msTimer);
 			},
 			reset: function() {
-				this.pause();
-				this.initInsertNum();
-				this.start();
-				$('.time-down-num').text(totleTime);
-				$('.time-down-ms-num').text('00');
+				// this.pause();
+				$('body').off('click', '.base-cell-item'); //base-cell-item
+				// this.initInsertNum();
+				// this.start();
+				// $('.time-down-num').text(totleTime);
+				// $('.time-down-ms-num').text('00');
 			},
 			sucessClickAnim: function() {
 				var tar = $('body');
