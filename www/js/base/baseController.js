@@ -1,7 +1,7 @@
 define(function () {
 	return function ($scope, $location, $ionicPopup, baseService) {
 		baseService.unbindHandleClick();
-		baseService.refrest();
+		// baseService.refrest();
 		baseService.initInsertNum();
 		baseService.handleClick();
 		baseService.start();
@@ -35,6 +35,9 @@ define(function () {
 		//restart
 		$scope.restart = function() {
 			this.closePopup();
+			// use update score method instead
+			$('.score').text(0);
+			baseService.initInsertNum();
 			var con = false;
 			baseService.start(con);
 		}
@@ -48,7 +51,5 @@ define(function () {
 			baseService.reset();
 			$location.path('#/home');
 		}
-		// $scope.profile = baseService.profile;
-		// $scope.login = baseService.login;
 	}
 });

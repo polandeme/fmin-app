@@ -56,9 +56,6 @@ define(['jqueryColor'], function() {
 					var curNum = parseInt($('.right-cell').text());
 					$(this).html('').removeClass('has-num right-cell');
 					self.reDraw(curNum);
-					// $('body').off('click', '.right-cell');
-
-					// e.stopImmediatePropagation();
 				});
 				$('body').on('click', '.base-cell-item:not(.right-cell)', function() {
 					var that = $(this);

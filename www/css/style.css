@@ -102,3 +102,37 @@
   color: #E0E0F8;
   font-size: 40px;
 }
+.ret-warp-content {
+  flex-flow: row wrap;
+}
+.ret-warp-content .row {
+  padding: 0;
+}
+.ret-header {
+  display: flex;
+  height: 40%;
+  background: blue;
+}
+.ret-content {
+  display: flex;
+  height: 30%;
+  margin: 0 !important;
+  background: green;
+}
+.ret-footer {
+  display: flex;
+  height: 30%;
+  margin: 0 !important;
+  background: gray;
+}
+.ret-share,
+.ret-back {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+.ret-share {
+  background-color: red;
+}
