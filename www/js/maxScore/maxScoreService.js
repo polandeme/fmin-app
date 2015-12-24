@@ -1,8 +1,8 @@
 define(function() {
 	var maxScoreService = function() {
 		var obj = {
-			store2LocalStorage: function() {
-
+			store2LocalStorage: function(key, value) {
+				localStorage[key] = value;
 			}
 		};
 

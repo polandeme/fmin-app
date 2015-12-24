@@ -1115,3 +1115,519 @@ INFO: loading config from /home/v/.config/ss/config.json
 2015-12-24 01:52:37 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41728
 2015-12-24 01:57:38 WARNING  timed out: mtalk.google.com:5228
 2015-12-24 01:57:38 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41776
+2015-12-24 01:59:59 INFO     connecting www.google.com.sg:443 from 127.0.0.1:41785
+2015-12-24 02:00:00 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:41787
+2015-12-24 02:02:38 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 02:02:38 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41823
+2015-12-24 02:03:15 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41825
+2015-12-24 08:00:43 INFO     connecting clients4.google.com:443 from 127.0.0.1:41831
+2015-12-24 08:00:43 INFO     connecting mtalk.google.com:443 from 127.0.0.1:41832
+2015-12-24 08:00:43 INFO     connecting www.google.com:443 from 127.0.0.1:41833
+2015-12-24 22:19:50 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41878
+2015-12-24 22:19:57 INFO     connecting mtalk.google.com:443 from 127.0.0.1:41882
+2015-12-24 22:19:57 INFO     connecting www.google.com:443 from 127.0.0.1:41883
+2015-12-24 22:19:57 INFO     connecting www.googleapis.com:443 from 127.0.0.1:41886
+2015-12-24 22:19:58 INFO     connecting clients4.google.com:443 from 127.0.0.1:41888
+2015-12-24 22:19:58 INFO     connecting clients4.google.com:443 from 127.0.0.1:41890
+2015-12-24 22:19:58 INFO     connecting clients4.google.com:443 from 127.0.0.1:41892
+2015-12-24 22:25:05 WARNING  timed out: mtalk.google.com:443
+2015-12-24 22:25:05 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41905
+2015-12-24 22:30:11 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 22:30:11 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41907
+2015-12-24 22:32:26 INFO     connecting www.google.com.sg:443 from 127.0.0.1:41909
+2015-12-24 22:32:38 INFO     connecting clients4.google.com:443 from 127.0.0.1:41915
+2015-12-24 22:35:16 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 22:35:16 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:41950
+2015-12-24 22:39:00 INFO     connecting clients4.google.com:443 from 127.0.0.1:41952
+2015-12-24 22:39:15 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:41954
+2015-12-24 22:39:18 INFO     connecting www.google.com.sg:443 from 127.0.0.1:41963
+2015-12-24 22:39:19 INFO     connecting www.google.com.sg:443 from 127.0.0.1:41965
+2015-12-24 22:39:22 INFO     connecting clients5.google.com:443 from 127.0.0.1:41970
+2015-12-24 22:39:23 INFO     connecting plus.google.com:443 from 127.0.0.1:41972
+2015-12-24 22:39:25 INFO     connecting id.google.com.sg:443 from 127.0.0.1:41976
+2015-12-24 22:39:26 INFO     connecting www.google.com:443 from 127.0.0.1:41978
+2015-12-24 22:39:27 INFO     connecting learn.ionicframework.com:80 from 127.0.0.1:41980
+2015-12-24 22:39:28 INFO     connecting learn.ionicframework.com:80 from 127.0.0.1:41983
+2015-12-24 22:39:28 INFO     connecting learn.ionicframework.com:80 from 127.0.0.1:41985
+2015-12-24 22:39:29 INFO     connecting learn.ionicframework.com:80 from 127.0.0.1:41988
+2015-12-24 22:39:29 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:41989
+2015-12-24 22:39:29 INFO     connecting code.ionicframework.com:80 from 127.0.0.1:41990
+2015-12-24 22:39:29 INFO     connecting platform.twitter.com:80 from 127.0.0.1:41995
+2015-12-24 22:39:34 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:39:34 INFO     connecting clients4.google.com:443 from 127.0.0.1:41998
+2015-12-24 22:40:25 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 22:40:25 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42009
+2015-12-24 22:41:37 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:41:37 INFO     connecting syndication.twitter.com:443 from 127.0.0.1:42013
+2015-12-24 22:42:26 INFO     connecting www.google.com:443 from 127.0.0.1:42023
+2015-12-24 22:42:32 INFO     connecting apis.google.com:443 from 127.0.0.1:42027
+2015-12-24 22:42:32 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42028
+2015-12-24 22:42:40 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:42:40 INFO     connecting www.gstatic.com:443 from 127.0.0.1:42031
+2015-12-24 22:42:43 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:42:43 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:42:43 INFO     connecting www.google.com:443 from 127.0.0.1:42033
+2015-12-24 22:42:48 INFO     connecting apis.google.com:443 from 127.0.0.1:42035
+2015-12-24 22:42:49 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42036
+2015-12-24 22:42:55 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:42:55 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:42:55 INFO     connecting 0.gravatar.com:443 from 127.0.0.1:42043
+2015-12-24 22:42:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:42:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:42:59 INFO     connecting 0.gravatar.com:443 from 127.0.0.1:42051
+2015-12-24 22:42:59 INFO     connecting 0.gravatar.com:443 from 127.0.0.1:42052
+2015-12-24 22:43:05 INFO     connecting ssl.google-analytics.com:443 from 127.0.0.1:42069
+2015-12-24 22:43:05 INFO     connecting clients1.google.com:443 from 127.0.0.1:42072
+2015-12-24 22:43:43 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:43:43 INFO     connecting apis.google.com:443 from 127.0.0.1:42097
+2015-12-24 22:43:43 INFO     connecting clients5.google.com:443 from 127.0.0.1:42098
+2015-12-24 22:43:43 INFO     connecting id.google.com.sg:443 from 127.0.0.1:42101
+2015-12-24 22:43:43 INFO     connecting www.google.com:443 from 127.0.0.1:42102
+2015-12-24 22:43:43 INFO     connecting www.gstatic.com:443 from 127.0.0.1:42105
+2015-12-24 22:43:52 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42107
+2015-12-24 22:43:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:43:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:43:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:43:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:43:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:43:59 INFO     connecting apis.google.com:443 from 127.0.0.1:42109
+2015-12-24 22:43:59 INFO     connecting clients5.google.com:443 from 127.0.0.1:42110
+2015-12-24 22:43:59 INFO     connecting www.google.com:443 from 127.0.0.1:42111
+2015-12-24 22:43:59 INFO     connecting www.gstatic.com:443 from 127.0.0.1:42112
+2015-12-24 22:44:01 INFO     connecting id.google.com.sg:443 from 127.0.0.1:42117
+2015-12-24 22:44:07 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:44:07 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42119
+2015-12-24 22:44:30 WARNING  timed out: learn.ionicframework.com:80
+2015-12-24 22:45:30 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 22:45:30 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42121
+2015-12-24 22:46:40 WARNING  timed out: learn.ionicframework.com:80
+2015-12-24 22:46:40 WARNING  timed out: learn.ionicframework.com:80
+2015-12-24 22:46:40 WARNING  timed out: learn.ionicframework.com:80
+2015-12-24 22:46:40 WARNING  timed out: syndication.twitter.com:443
+2015-12-24 22:46:48 INFO     connecting cdn.sstatic.net:80 from 127.0.0.1:42125
+2015-12-24 22:46:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:46:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:46:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:46:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:46:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-24 22:46:48 INFO     connecting www.gravatar.com:443 from 127.0.0.1:42128
+2015-12-24 22:46:48 INFO     connecting www.gravatar.com:443 from 127.0.0.1:42131
+2015-12-24 22:46:49 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:42135
+2015-12-24 22:46:49 INFO     connecting cdn.sstatic.net:80 from 127.0.0.1:42139
+2015-12-24 22:46:49 INFO     connecting cdn.sstatic.net:80 from 127.0.0.1:42141
+2015-12-24 22:46:50 INFO     connecting cdn-prom.sstatic.net:80 from 127.0.0.1:42144
+2015-12-24 22:50:00 INFO     connecting apis.google.com:443 from 127.0.0.1:42148
+2015-12-24 22:50:00 INFO     connecting clients5.google.com:443 from 127.0.0.1:42149
+2015-12-24 22:50:00 INFO     connecting plus.google.com:443 from 127.0.0.1:42150
+2015-12-24 22:50:00 INFO     connecting www.google.com:443 from 127.0.0.1:42151
+2015-12-24 22:50:00 INFO     connecting www.gstatic.com:443 from 127.0.0.1:42152
+2015-12-24 22:50:34 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 22:50:34 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42165
+2015-12-24 22:55:42 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 22:55:42 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42176
+2015-12-24 22:55:46 INFO     connecting clients4.google.com:443 from 127.0.0.1:42178
+2015-12-24 23:00:43 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:00:43 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42208
+2015-12-24 23:01:57 INFO     connecting clients4.google.com:443 from 127.0.0.1:42212
+2015-12-24 23:05:51 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:05:51 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42234
+2015-12-24 23:07:30 INFO     connecting www.google.com.sg:443 from 127.0.0.1:42245
+2015-12-24 23:10:57 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:10:57 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42254
+2015-12-24 23:12:29 INFO     connecting clients4.google.com:443 from 127.0.0.1:42267
+2015-12-24 23:16:00 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:16:00 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42269
+2015-12-24 23:19:45 INFO     connecting clients4.google.com:443 from 127.0.0.1:42275
+2015-12-24 23:21:05 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:21:05 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42277
+2015-12-24 23:23:10 INFO     connecting clients2.google.com:443 from 127.0.0.1:42282
+2015-12-24 23:23:12 INFO     connecting clients2.googleusercontent.com:443 from 127.0.0.1:42284
+2015-12-24 23:26:08 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:26:08 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42286
+2015-12-24 23:26:23 INFO     connecting clients4.google.com:443 from 127.0.0.1:42288
+2015-12-24 23:31:14 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:31:14 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42290
+2015-12-24 23:36:15 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:36:15 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42292
+2015-12-24 23:39:27 INFO     connecting clients4.google.com:443 from 127.0.0.1:42299
+2015-12-24 23:41:18 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:41:18 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42301
+2015-12-24 23:46:18 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:46:18 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42303
+2015-12-24 23:51:18 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:51:18 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42305
+2015-12-24 23:56:19 WARNING  timed out: mtalk.google.com:5228
+2015-12-24 23:56:19 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42307
+2015-12-24 23:56:26 INFO     connecting clients4.google.com:443 from 127.0.0.1:42309
+2015-12-25 00:01:26 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:01:26 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42313
+2015-12-25 00:06:27 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:06:27 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42321
+2015-12-25 00:11:28 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:11:28 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42323
+2015-12-25 00:13:03 INFO     connecting clients4.google.com:443 from 127.0.0.1:42325
+2015-12-25 00:16:35 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:16:35 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42327
+2015-12-25 00:19:21 INFO     connecting clients4.google.com:443 from 127.0.0.1:42329
+2015-12-25 00:21:42 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:21:42 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42331
+2015-12-25 00:26:42 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:26:42 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42340
+2015-12-25 00:31:43 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:31:43 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42342
+2015-12-25 00:36:44 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:36:44 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42344
+2015-12-25 00:36:49 INFO     connecting clients4.google.com:443 from 127.0.0.1:42346
+2015-12-25 00:38:55 INFO     connecting clients4.google.com:443 from 127.0.0.1:42348
+2015-12-25 00:41:49 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:41:49 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42350
+2015-12-25 00:45:39 INFO     connecting www.google.com.sg:443 from 127.0.0.1:42352
+2015-12-25 00:45:41 INFO     connecting plus.google.com:443 from 127.0.0.1:42354
+2015-12-25 00:45:41 INFO     connecting www.google.com:443 from 127.0.0.1:42355
+2015-12-25 00:45:43 INFO     connecting clients4.google.com:443 from 127.0.0.1:42365
+2015-12-25 00:46:56 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:46:56 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42375
+2015-12-25 00:49:04 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:49:04 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:49:04 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:42377
+2015-12-25 00:49:08 INFO     connecting www.google.com:443 from 127.0.0.1:42382
+2015-12-25 00:49:10 INFO     connecting clients5.google.com:443 from 127.0.0.1:42386
+2015-12-25 00:49:11 INFO     connecting plus.google.com:443 from 127.0.0.1:42388
+2015-12-25 00:49:16 INFO     connecting apis.google.com:443 from 127.0.0.1:42390
+2015-12-25 00:49:16 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42391
+2015-12-25 00:51:00 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:51:00 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:51:00 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:51:00 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:51:00 INFO     connecting clients4.google.com:443 from 127.0.0.1:42406
+2015-12-25 00:52:02 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:52:02 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42408
+2015-12-25 00:56:08 INFO     connecting www.google.com.sg:443 from 127.0.0.1:42412
+2015-12-25 00:56:08 INFO     connecting www.google.com.sg:443 from 127.0.0.1:42414
+2015-12-25 00:56:09 INFO     connecting plus.google.com:443 from 127.0.0.1:42416
+2015-12-25 00:56:09 INFO     connecting www.google.com:443 from 127.0.0.1:42417
+2015-12-25 00:56:11 INFO     connecting clients5.google.com:443 from 127.0.0.1:42420
+2015-12-25 00:56:17 INFO     connecting apis.google.com:443 from 127.0.0.1:42423
+2015-12-25 00:56:17 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42424
+2015-12-25 00:56:20 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:56:20 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:56:20 INFO     connecting www.google.com:443 from 127.0.0.1:42437
+2015-12-25 00:56:22 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:56:22 INFO     connecting lh4.googleusercontent.com:443 from 127.0.0.1:42439
+2015-12-25 00:56:22 INFO     connecting id.google.com.sg:443 from 127.0.0.1:42441
+2015-12-25 00:56:23 INFO     connecting clients5.google.com:443 from 127.0.0.1:42443
+2015-12-25 00:56:28 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:56:28 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:56:28 INFO     connecting apis.google.com:443 from 127.0.0.1:42445
+2015-12-25 00:56:28 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42446
+2015-12-25 00:56:28 INFO     connecting clients4.google.com:443 from 127.0.0.1:42449
+2015-12-25 00:57:09 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 00:57:09 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42451
+2015-12-25 00:57:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:57:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:57:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:57:48 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 00:57:48 INFO     connecting clients4.google.com:443 from 127.0.0.1:42453
+2015-12-25 01:01:39 INFO     connecting clients4.google.com:443 from 127.0.0.1:42465
+2015-12-25 01:02:09 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:02:09 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42467
+2015-12-25 01:06:29 INFO     connecting plus.google.com:443 from 127.0.0.1:42474
+2015-12-25 01:06:50 INFO     connecting clients4.google.com:443 from 127.0.0.1:42487
+2015-12-25 01:07:11 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:07:11 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42489
+2015-12-25 01:12:01 INFO     connecting clients4.google.com:443 from 127.0.0.1:42506
+2015-12-25 01:12:12 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:12:12 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42508
+2015-12-25 01:13:56 INFO     connecting clients4.google.com:443 from 127.0.0.1:42510
+2015-12-25 01:17:12 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:17:12 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42522
+2015-12-25 01:17:12 INFO     connecting clients4.google.com:443 from 127.0.0.1:42524
+2015-12-25 01:22:13 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:22:13 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42538
+2015-12-25 01:22:23 INFO     connecting clients4.google.com:443 from 127.0.0.1:42542
+2015-12-25 01:26:24 INFO     connecting plus.google.com:443 from 127.0.0.1:42544
+2015-12-25 01:27:01 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:42549
+2015-12-25 01:27:02 INFO     connecting www.google.com.sg:443 from 127.0.0.1:42555
+2015-12-25 01:27:02 INFO     connecting apis.google.com:443 from 127.0.0.1:42557
+2015-12-25 01:27:02 INFO     connecting clients5.google.com:443 from 127.0.0.1:42558
+2015-12-25 01:27:02 INFO     connecting www.google.com:443 from 127.0.0.1:42559
+2015-12-25 01:27:02 INFO     connecting www.gstatic.com:443 from 127.0.0.1:42560
+2015-12-25 01:27:03 INFO     connecting www.google.com.sg:443 from 127.0.0.1:42565
+2015-12-25 01:27:06 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:42575
+2015-12-25 01:27:15 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:27:15 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:27:15 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:27:15 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:27:15 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:27:15 INFO     connecting clients4.google.com:443 from 127.0.0.1:42577
+2015-12-25 01:27:23 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:27:23 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42579
+2015-12-25 01:28:18 INFO     connecting www.google.com:443 from 127.0.0.1:42593
+2015-12-25 01:28:20 INFO     connecting clients5.google.com:443 from 127.0.0.1:42595
+2015-12-25 01:28:25 INFO     connecting apis.google.com:443 from 127.0.0.1:42598
+2015-12-25 01:28:25 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42600
+2015-12-25 01:28:36 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:28:36 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:28:36 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:28:36 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:28:36 INFO     connecting clients1.google.com:443 from 127.0.0.1:42608
+2015-12-25 01:28:49 INFO     connecting clients5.google.com:443 from 127.0.0.1:42611
+2015-12-25 01:28:54 INFO     connecting apis.google.com:443 from 127.0.0.1:42613
+2015-12-25 01:29:01 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:42629
+2015-12-25 01:29:30 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:29:30 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:29:30 INFO     connecting clients5.google.com:443 from 127.0.0.1:42635
+2015-12-25 01:29:35 INFO     connecting apis.google.com:443 from 127.0.0.1:42637
+2015-12-25 01:29:37 INFO     connecting www.googleapis.com:443 from 127.0.0.1:42639
+2015-12-25 01:29:41 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:29:41 INFO     connecting clients5.google.com:443 from 127.0.0.1:42641
+2015-12-25 01:29:46 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:29:46 INFO     connecting apis.google.com:443 from 127.0.0.1:42643
+2015-12-25 01:29:46 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42644
+2015-12-25 01:29:53 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:42656
+2015-12-25 01:29:53 INFO     connecting 1.gravatar.com:80 from 127.0.0.1:42660
+2015-12-25 01:29:54 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:42662
+2015-12-25 01:29:56 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:29:56 INFO     connecting clients5.google.com:443 from 127.0.0.1:42668
+2015-12-25 01:30:00 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:30:00 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:30:15 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:30:15 INFO     connecting clients5.google.com:443 from 127.0.0.1:42793
+2015-12-25 01:30:20 INFO     connecting apis.google.com:443 from 127.0.0.1:42795
+2015-12-25 01:31:12 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:31:12 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:31:12 INFO     connecting clients5.google.com:443 from 127.0.0.1:42816
+2015-12-25 01:31:18 INFO     connecting apis.google.com:443 from 127.0.0.1:42818
+2015-12-25 01:31:24 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:31:24 INFO     connecting www.google.com:443 from 127.0.0.1:42820
+2015-12-25 01:31:43 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:31:43 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:31:43 INFO     connecting clients4.google.com:443 from 127.0.0.1:42901
+2015-12-25 01:32:03 INFO     connecting clients5.google.com:443 from 127.0.0.1:42904
+2015-12-25 01:32:33 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:32:34 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:42914
+2015-12-25 01:32:38 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:32:38 INFO     connecting www.google.com:443 from 127.0.0.1:42927
+2015-12-25 01:32:46 INFO     connecting clients5.google.com:443 from 127.0.0.1:42936
+2015-12-25 01:33:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:33:51 INFO     connecting www.google.com:443 from 127.0.0.1:42941
+2015-12-25 01:33:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:33:54 INFO     connecting clients5.google.com:443 from 127.0.0.1:42943
+2015-12-25 01:34:00 INFO     connecting apis.google.com:443 from 127.0.0.1:42945
+2015-12-25 01:34:00 INFO     connecting www.gstatic.com:443 from 127.0.0.1:42946
+2015-12-25 01:34:00 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:42949
+2015-12-25 01:34:02 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:34:08 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:34:08 INFO     connecting clients5.google.com:443 from 127.0.0.1:42994
+2015-12-25 01:34:08 INFO     connecting www.google.com:443 from 127.0.0.1:42995
+2015-12-25 01:35:18 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:35:18 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:35:18 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:35:18 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:35:18 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:35:18 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:43014
+2015-12-25 01:37:34 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:37:34 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43030
+2015-12-25 01:39:04 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43036
+2015-12-25 01:39:04 INFO     connecting apis.google.com:443 from 127.0.0.1:43038
+2015-12-25 01:39:04 INFO     connecting clients5.google.com:443 from 127.0.0.1:43039
+2015-12-25 01:39:04 INFO     connecting plus.google.com:443 from 127.0.0.1:43042
+2015-12-25 01:39:04 INFO     connecting www.google.com:443 from 127.0.0.1:43043
+2015-12-25 01:39:04 INFO     connecting www.gstatic.com:443 from 127.0.0.1:43044
+2015-12-25 01:39:04 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43048
+2015-12-25 01:42:34 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:42:34 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43081
+2015-12-25 01:47:22 INFO     connecting clients4.google.com:443 from 127.0.0.1:43095
+2015-12-25 01:47:43 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:47:43 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43098
+2015-12-25 01:48:05 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43101
+2015-12-25 01:48:07 INFO     connecting apis.google.com:443 from 127.0.0.1:43103
+2015-12-25 01:48:07 INFO     connecting clients5.google.com:443 from 127.0.0.1:43104
+2015-12-25 01:48:07 INFO     connecting www.google.com:443 from 127.0.0.1:43105
+2015-12-25 01:48:07 INFO     connecting www.gstatic.com:443 from 127.0.0.1:43109
+2015-12-25 01:48:10 INFO     connecting plus.google.com:443 from 127.0.0.1:43111
+2015-12-25 01:48:23 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:48:23 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:48:23 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:48:23 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:48:23 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43115
+2015-12-25 01:48:23 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43117
+2015-12-25 01:48:23 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43118
+2015-12-25 01:48:23 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43119
+2015-12-25 01:48:23 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43123
+2015-12-25 01:48:24 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:43126
+2015-12-25 01:49:32 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43153
+2015-12-25 01:49:32 INFO     connecting www.googleapis.com:443 from 127.0.0.1:43155
+2015-12-25 01:49:32 INFO     connecting www.googleapis.com:443 from 127.0.0.1:43156
+2015-12-25 01:49:32 INFO     connecting www.googleapis.com:443 from 127.0.0.1:43157
+2015-12-25 01:49:33 INFO     connecting accounts.google.com:443 from 127.0.0.1:43161
+2015-12-25 01:49:33 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:49:33 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:49:33 INFO     connecting accounts.google.com:443 from 127.0.0.1:43163
+2015-12-25 01:49:33 INFO     connecting clients4.google.com:443 from 127.0.0.1:43166
+2015-12-25 01:49:33 INFO     connecting www.google.com:443 from 127.0.0.1:43168
+2015-12-25 01:49:34 INFO     connecting accounts.google.com:443 from 127.0.0.1:43171
+2015-12-25 01:49:34 INFO     connecting android.clients.google.com:443 from 127.0.0.1:43173
+2015-12-25 01:49:41 INFO     connecting clients2.google.com:443 from 127.0.0.1:43181
+2015-12-25 01:49:43 INFO     connecting ssl.google-analytics.com:443 from 127.0.0.1:43190
+2015-12-25 01:49:44 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:49:44 INFO     connecting clients4.google.com:443 from 127.0.0.1:43199
+2015-12-25 01:49:45 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:43203
+2015-12-25 01:49:45 INFO     connecting autoproxy-gfwlist.googlecode.com:443 from 127.0.0.1:43206
+2015-12-25 01:49:49 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43209
+2015-12-25 01:49:49 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43216
+2015-12-25 01:54:49 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:54:49 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43246
+2015-12-25 01:54:51 INFO     connecting clients4.google.com:443 from 127.0.0.1:43248
+2015-12-25 01:55:25 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:43250
+2015-12-25 01:55:26 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43256
+2015-12-25 01:55:26 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43258
+2015-12-25 01:55:28 INFO     connecting clients5.google.com:443 from 127.0.0.1:43260
+2015-12-25 01:55:29 INFO     connecting plus.google.com:443 from 127.0.0.1:43262
+2015-12-25 01:55:34 INFO     connecting apis.google.com:443 from 127.0.0.1:43266
+2015-12-25 01:55:34 INFO     connecting www.google.com:443 from 127.0.0.1:43268
+2015-12-25 01:55:34 INFO     connecting www.gstatic.com:443 from 127.0.0.1:43269
+2015-12-25 01:55:38 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:55:38 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:55:38 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43275
+2015-12-25 01:55:39 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:43277
+2015-12-25 01:56:28 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:28 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:28 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:28 INFO     connecting apis.google.com:443 from 127.0.0.1:43296
+2015-12-25 01:56:28 INFO     connecting clients5.google.com:443 from 127.0.0.1:43297
+2015-12-25 01:56:28 INFO     connecting lh4.googleusercontent.com:443 from 127.0.0.1:43298
+2015-12-25 01:56:28 INFO     connecting www.google.com:443 from 127.0.0.1:43300
+2015-12-25 01:56:28 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43299
+2015-12-25 01:56:28 INFO     connecting www.gstatic.com:443 from 127.0.0.1:43301
+2015-12-25 01:56:36 INFO     connecting 1.gravatar.com:80 from 127.0.0.1:43317
+2015-12-25 01:56:37 INFO     connecting www.youtube.com:80 from 127.0.0.1:43321
+2015-12-25 01:56:37 INFO     connecting www.youtube.com:80 from 127.0.0.1:43320
+2015-12-25 01:56:37 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:43325
+2015-12-25 01:56:37 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:43324
+2015-12-25 01:56:37 INFO     connecting 1.gravatar.com:80 from 127.0.0.1:43326
+2015-12-25 01:56:37 INFO     connecting 1.gravatar.com:80 from 127.0.0.1:43328
+2015-12-25 01:56:37 INFO     connecting 1.gravatar.com:80 from 127.0.0.1:43327
+2015-12-25 01:56:37 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:43339
+2015-12-25 01:56:37 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:43341
+2015-12-25 01:56:37 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:43343
+2015-12-25 01:56:37 INFO     connecting www.youtube.com:443 from 127.0.0.1:43345
+2015-12-25 01:56:37 INFO     connecting 0.gravatar.com:80 from 127.0.0.1:43347
+2015-12-25 01:56:38 INFO     connecting clients1.google.com:443 from 127.0.0.1:43350
+2015-12-25 01:56:39 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:39 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:39 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:39 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:39 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:39 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:56:40 INFO     connecting i.ytimg.com:443 from 127.0.0.1:43352
+2015-12-25 01:58:05 INFO     connecting errors.angularjs.org:443 from 127.0.0.1:43371
+2015-12-25 01:58:05 INFO     connecting errors.angularjs.org:443 from 127.0.0.1:43370
+2015-12-25 01:58:06 INFO     connecting docs.angularjs.org:443 from 127.0.0.1:43374
+2015-12-25 01:58:11 INFO     connecting ssl.google-analytics.com:443 from 127.0.0.1:43376
+2015-12-25 01:58:40 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:58:40 INFO     connecting apis.google.com:443 from 127.0.0.1:43381
+2015-12-25 01:58:40 INFO     connecting clients5.google.com:443 from 127.0.0.1:43382
+2015-12-25 01:58:40 INFO     connecting lh4.googleusercontent.com:443 from 127.0.0.1:43383
+2015-12-25 01:58:40 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43384
+2015-12-25 01:58:40 INFO     connecting www.google.com:443 from 127.0.0.1:43385
+2015-12-25 01:58:40 INFO     connecting www.gstatic.com:443 from 127.0.0.1:43386
+2015-12-25 01:58:48 INFO     connecting platform.twitter.com:80 from 127.0.0.1:43401
+2015-12-25 01:58:48 INFO     connecting connect.facebook.net:443 from 127.0.0.1:43405
+2015-12-25 01:58:49 INFO     connecting platform.twitter.com:80 from 127.0.0.1:43410
+2015-12-25 01:58:49 INFO     connecting syndication.twitter.com:443 from 127.0.0.1:43412
+2015-12-25 01:58:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:58:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:58:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:58:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:58:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:58:51 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:58:51 INFO     connecting staticxx.facebook.com:80 from 127.0.0.1:43419
+2015-12-25 01:58:51 INFO     connecting staticxx.facebook.com:80 from 127.0.0.1:43420
+2015-12-25 01:58:51 INFO     connecting staticxx.facebook.com:443 from 127.0.0.1:43421
+2015-12-25 01:58:51 INFO     connecting www.facebook.com:443 from 127.0.0.1:43422
+2015-12-25 01:58:51 INFO     connecting www.facebook.com:443 from 127.0.0.1:43427
+2015-12-25 01:59:28 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:28 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:28 INFO     connecting apis.google.com:443 from 127.0.0.1:43429
+2015-12-25 01:59:28 INFO     connecting clients5.google.com:443 from 127.0.0.1:43430
+2015-12-25 01:59:28 INFO     connecting lh4.googleusercontent.com:443 from 127.0.0.1:43431
+2015-12-25 01:59:28 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43432
+2015-12-25 01:59:28 INFO     connecting www.gstatic.com:443 from 127.0.0.1:43436
+2015-12-25 01:59:28 INFO     connecting www.google.com:443 from 127.0.0.1:43434
+2015-12-25 01:59:45 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:45 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:45 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:45 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:45 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:45 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 01:59:45 INFO     connecting gist.github.com:443 from 127.0.0.1:43455
+2015-12-25 01:59:45 INFO     connecting gist.github.com:443 from 127.0.0.1:43457
+2015-12-25 01:59:45 INFO     connecting gist.github.com:443 from 127.0.0.1:43459
+2015-12-25 01:59:45 INFO     connecting gist.github.com:443 from 127.0.0.1:43461
+2015-12-25 01:59:51 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 01:59:51 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43465
+2015-12-25 02:00:22 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43468
+2015-12-25 02:00:22 INFO     connecting www.google.com:443 from 127.0.0.1:43469
+2015-12-25 02:00:22 INFO     connecting lh4.googleusercontent.com:443 from 127.0.0.1:43467
+2015-12-25 02:00:23 INFO     connecting clients5.google.com:443 from 127.0.0.1:43473
+2015-12-25 02:00:28 INFO     connecting apis.google.com:443 from 127.0.0.1:43475
+2015-12-25 02:00:30 INFO     connecting twitter.com:443 from 127.0.0.1:43481
+2015-12-25 02:01:04 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:04 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:04 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:04 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:04 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:04 INFO     connecting www.google.com:443 from 127.0.0.1:43489
+2015-12-25 02:01:05 INFO     connecting clients5.google.com:443 from 127.0.0.1:43491
+2015-12-25 02:01:11 INFO     connecting apis.google.com:443 from 127.0.0.1:43493
+2015-12-25 02:01:11 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43494
+2015-12-25 02:01:15 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:15 INFO     connecting www.google.com:443 from 127.0.0.1:43497
+2015-12-25 02:01:17 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:17 INFO     connecting clients5.google.com:443 from 127.0.0.1:43499
+2015-12-25 02:01:22 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:22 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:22 INFO     connecting apis.google.com:443 from 127.0.0.1:43501
+2015-12-25 02:01:22 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43502
+2015-12-25 02:01:29 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:29 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:29 INFO     connecting www.google.com:443 from 127.0.0.1:43505
+2015-12-25 02:01:31 INFO     connecting clients5.google.com:443 from 127.0.0.1:43507
+2015-12-25 02:01:33 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:33 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:01:38 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43510
+2015-12-25 02:01:38 INFO     connecting apis.google.com:443 from 127.0.0.1:43509
+2015-12-25 02:02:05 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:05 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:05 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:05 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:05 INFO     connecting clients5.google.com:443 from 127.0.0.1:43513
+2015-12-25 02:02:10 INFO     connecting apis.google.com:443 from 127.0.0.1:43515
+2015-12-25 02:02:10 INFO     connecting ssl.gstatic.com:443 from 127.0.0.1:43516
+2015-12-25 02:02:31 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:31 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:31 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:31 INFO     connecting clients5.google.com:443 from 127.0.0.1:43527
+2015-12-25 02:02:35 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43531
+2015-12-25 02:02:35 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43533
+2015-12-25 02:02:35 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43534
+2015-12-25 02:02:36 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43542
+2015-12-25 02:02:36 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43546
+2015-12-25 02:02:36 INFO     connecting www.gravatar.com:443 from 127.0.0.1:43549
+2015-12-25 02:02:40 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:43558
+2015-12-25 02:02:40 INFO     connecting www.google-analytics.com:80 from 127.0.0.1:43559
+2015-12-25 02:02:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:59 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:02:59 INFO     connecting clients5.google.com:443 from 127.0.0.1:43581
+2015-12-25 02:03:54 WARNING  timed out: syndication.twitter.com:443
+2015-12-25 02:04:56 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 02:04:56 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43593
+2015-12-25 02:05:30 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:05:30 INFO     connecting errors.angularjs.org:443 from 127.0.0.1:43612
+2015-12-25 02:05:31 INFO     connecting ajax.googleapis.com:443 from 127.0.0.1:43614
+2015-12-25 02:05:31 INFO     connecting docs.angularjs.org:443 from 127.0.0.1:43615
+2015-12-25 02:05:31 INFO     connecting ssl.google-analytics.com:443 from 127.0.0.1:43616
+2015-12-25 02:05:34 INFO     connecting syndication.twitter.com:443 from 127.0.0.1:43620

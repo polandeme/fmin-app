@@ -39,6 +39,7 @@ define(function () {
 			$('.score').text(0);
 			baseService.initInsertNum();
 			var con = false;
+			// baseService.handleClick();
 			baseService.start(con);
 		}
 		$scope.continueGame = function() {

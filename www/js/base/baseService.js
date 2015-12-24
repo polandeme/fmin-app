@@ -1,5 +1,6 @@
 define(['jqueryColor'], function() {
-	var baseService = function() {
+	var baseService = function(maxScoreService) {
+		console.log(maxScoreService);
 		// var girdItme = '<li class="col col-25 base-cell-item"></li>'
 		var itemGroup = $('.base-cell-item');
 		var sTimer = null; // timeInterval timer
