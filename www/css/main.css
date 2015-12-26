@@ -63,7 +63,8 @@ div {
 }
 .time-down-ms-num {
   display: inline-block;
-  width: 2.1rem;
+  width: 2.3rem;
+  text-align: left;
 }
 .time-unit {
   font-size: 34px;

@@ -26,7 +26,7 @@ define(function () {
 				title: '暂停',
 				scope: $scope
 			});
-			$scope.closePopup = function() {
+			$scope.closePopup = function () {
 				popup.close();
 			}
 			// return popup;
@@ -35,11 +35,10 @@ define(function () {
 		//restart
 		$scope.restart = function() {
 			this.closePopup();
-			// use update score method instead
 			$('.score').text(0);
 			baseService.initInsertNum();
 			var con = false;
-			// baseService.handleClick();
+			baseService.handleClick();
 			baseService.start(con);
 		}
 		$scope.continueGame = function() {

@@ -37,15 +37,17 @@ define(['jqueryColor'], function() {
 
 				$('.base-cell-item').eq(index_one)
 							   .addClass('has-num right-cell')
+							   .attr('value', num_one)
 							   .html('<span>' + num_one + '</span>');
 
 				$('.base-cell-item').eq(index_two)
 				               .addClass('has-num wrong-cell')
+				               .attr('value', num_two)
 				               .html('<span>' + num_two + '</span>');
 			},
 
 			handleClick: function() {
-				// alert('handleClick');
+				this.unbindHandleClick();
 				var self = this;
 				$('body').on('click', '.right-cell', function(e) {
 					// count++;
@@ -54,8 +56,8 @@ define(['jqueryColor'], function() {
 					score++;
 					$('.score').text(score);
 					self.sucessClickAnim();
-					var curNum = parseInt($('.right-cell').text());
-					$(this).html('').removeClass('has-num right-cell');
+					var curNum = parseInt($('.right-cell').attr('value'));
+					$(this).attr('value', -1).html('').removeClass('has-num right-cell');
 					self.reDraw(curNum);
 				});
 				$('body').on('click', '.base-cell-item:not(.right-cell)', function() {
@@ -64,15 +66,12 @@ define(['jqueryColor'], function() {
 				})
 			},
 			handleBack: function() {
-				// alert('use cordova');
 				ionic.Platform.ready(function() {
 					if(window.cordova) {
 						document.addEventListener("backbutton", function() {
-							// alert('reset');
 							this.reset();
 						}, false);
 					} else {
-						// alert('cordova');
 					}
 				});
 			},
@@ -87,21 +86,39 @@ define(['jqueryColor'], function() {
 				var num = Math.floor(Math.random() * 10);
 				// var curNum = parseInt($('.right-cell').text());
 				var num = this.randomAgain(curNum);
-				var wrong_num = parseInt($('.wrong-cell').text());
+				var wrong_num = parseInt($('.wrong-cell').attr('value'));
 
 				while(wrong_num == num) {
 					num = this.randomAgain(curNum);
 				}
-				var html = '<span>' + num + '</span>';
+				var expression = num;
+				if(num > 40) {
+					expression = this.getExp(num);
+				}
+				var html = '<span>' + expression + '</span>';
 				if(num < wrong_num) {
-					$('.base-cell-item:not(.wrong-cell)').eq(index).addClass('has-num right-cell').html(html);
+					$('.base-cell-item:not(.wrong-cell)').eq(index)
+														 .addClass('has-num right-cell')
+														 .attr('value', num)
+														 .html(html);
 				} else {
 					$('.wrong-cell').addClass('right-cell');
 					$('.base-cell-item').removeClass('wrong-cell');//.addClass('right-cell');
-					$('.base-cell-item:not(.right-cell)').eq(index).addClass('has-num wrong-cell').html(html);
+					$('.base-cell-item:not(.right-cell)').eq(index)
+														 .addClass('has-num wrong-cell')
+														 .attr('value', num)
+														 .html(html);
 				}
 			},
 
+			/**
+			 * 分解数字
+			 * @TODO 添加分解类型参数
+			 */
+			 getExp: function(num) {
+			 	var args = parseInt(num / 5);
+			 	return (args).toString() + '*' + 5 ;
+			 },
 			//倒计时模块 
 			timeDown: function(cont) {
 				var cont = cont || false;
@@ -138,6 +155,7 @@ define(['jqueryColor'], function() {
 							counter = 100;
 						} else {
 							clearInterval(msTimer);
+							maxScoreService.stroeMaxScore($('.score').text());
 							self.unbindHandleClick();
 						}
 					}
