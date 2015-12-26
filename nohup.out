@@ -1631,3 +1631,137 @@ INFO: loading config from /home/v/.config/ss/config.json
 2015-12-25 02:05:31 INFO     connecting docs.angularjs.org:443 from 127.0.0.1:43615
 2015-12-25 02:05:31 INFO     connecting ssl.google-analytics.com:443 from 127.0.0.1:43616
 2015-12-25 02:05:34 INFO     connecting syndication.twitter.com:443 from 127.0.0.1:43620
+2015-12-25 02:07:33 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 02:07:33 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:43627
+2015-12-25 02:07:34 INFO     connecting www.google.com.sg:443 from 127.0.0.1:43634
+2015-12-25 02:07:48 WARNING  timed out: twitter.com:443
+2015-12-25 02:08:44 INFO     connecting clients4.google.com:443 from 127.0.0.1:43659
+2015-12-25 02:09:59 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43675
+2015-12-25 20:35:01 INFO     connecting mtalk.google.com:443 from 127.0.0.1:43677
+2015-12-25 20:35:01 INFO     connecting www.google.com:443 from 127.0.0.1:43678
+2015-12-25 20:35:01 INFO     connecting www.googleapis.com:443 from 127.0.0.1:43681
+2015-12-25 20:35:02 INFO     connecting www.googleapis.com:443 from 127.0.0.1:43683
+2015-12-25 20:35:02 INFO     connecting clients4.google.com:443 from 127.0.0.1:43685
+2015-12-25 20:35:32 ERROR    [Errno 104] Connection reset by peer
+2015-12-25 20:35:32 INFO     connecting clients4.google.com:443 from 127.0.0.1:43687
+2015-12-25 20:35:38 INFO     connecting clients2.google.com:443 from 127.0.0.1:43689
+2015-12-25 20:35:39 INFO     connecting clients2.googleusercontent.com:443 from 127.0.0.1:43691
+2015-12-25 20:40:41 WARNING  timed out: mtalk.google.com:443
+2015-12-25 20:40:41 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43693
+2015-12-25 20:45:42 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 20:45:42 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43696
+2015-12-25 20:50:35 INFO     connecting clients4.google.com:443 from 127.0.0.1:43698
+2015-12-25 20:50:46 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 20:50:46 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43700
+2015-12-25 20:54:37 INFO     connecting clients4.google.com:443 from 127.0.0.1:43702
+2015-12-25 20:55:48 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 20:55:48 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43704
+2015-12-25 20:57:20 INFO     connecting clients4.google.com:443 from 127.0.0.1:43706
+2015-12-25 21:00:49 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:00:49 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43708
+2015-12-25 21:05:51 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:05:51 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43710
+2015-12-25 21:10:52 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:10:52 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43712
+2015-12-25 21:15:53 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:15:53 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43716
+2015-12-25 21:17:17 INFO     connecting clients4.google.com:443 from 127.0.0.1:43721
+2015-12-25 21:20:58 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:20:58 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43731
+2015-12-25 21:24:54 INFO     connecting clients4.google.com:443 from 127.0.0.1:43733
+2015-12-25 21:26:04 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:26:04 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43735
+2015-12-25 21:31:04 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:31:04 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43742
+2015-12-25 21:31:42 INFO     connecting clients4.google.com:443 from 127.0.0.1:43744
+2015-12-25 21:36:13 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:36:13 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43746
+2015-12-25 21:37:53 INFO     connecting clients4.google.com:443 from 127.0.0.1:43748
+2015-12-25 21:41:14 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:41:14 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43750
+2015-12-25 21:46:14 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:46:14 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43752
+2015-12-25 21:51:15 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:51:15 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43757
+2015-12-25 21:56:16 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 21:56:16 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43759
+2015-12-25 21:58:28 INFO     connecting clients4.google.com:443 from 127.0.0.1:43761
+2015-12-25 22:01:19 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:01:19 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43763
+2015-12-25 22:06:19 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:06:19 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43765
+2015-12-25 22:11:20 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:11:20 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43767
+2015-12-25 22:16:21 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:16:21 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43769
+2015-12-25 22:17:39 INFO     connecting clients4.google.com:443 from 127.0.0.1:43771
+2015-12-25 22:21:30 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:21:30 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43776
+2015-12-25 22:25:36 INFO     connecting clients4.google.com:443 from 127.0.0.1:43778
+2015-12-25 22:26:37 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:26:37 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43780
+2015-12-25 22:31:37 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:31:37 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43786
+2015-12-25 22:33:37 INFO     connecting clients2.google.com:443 from 127.0.0.1:43788
+2015-12-25 22:36:39 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:36:39 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43790
+2015-12-25 22:38:53 INFO     connecting clients4.google.com:443 from 127.0.0.1:43792
+2015-12-25 22:41:44 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:41:44 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43794
+2015-12-25 22:46:44 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:46:44 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43796
+2015-12-25 22:48:33 INFO     connecting clients4.google.com:443 from 127.0.0.1:43798
+2015-12-25 22:48:33 INFO     connecting clients4.google.com:443 from 127.0.0.1:43800
+2015-12-25 22:53:35 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:53:35 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43802
+2015-12-25 22:58:35 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 22:58:35 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43804
+2015-12-25 23:02:21 INFO     connecting clients4.google.com:443 from 127.0.0.1:43806
+2015-12-25 23:03:34 INFO     connecting clients4.google.com:443 from 127.0.0.1:43808
+2015-12-25 23:03:45 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:03:45 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43810
+2015-12-25 23:08:45 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:08:45 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43812
+2015-12-25 23:13:47 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:13:47 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43820
+2015-12-25 23:18:49 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:18:49 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43822
+2015-12-25 23:23:50 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:23:50 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43827
+2015-12-25 23:24:20 INFO     connecting clients4.google.com:443 from 127.0.0.1:43829
+2015-12-25 23:28:50 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:28:50 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43831
+2015-12-25 23:33:51 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:33:51 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43837
+2015-12-25 23:38:52 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:38:52 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43839
+2015-12-25 23:40:11 INFO     connecting clients4.google.com:443 from 127.0.0.1:43841
+2015-12-25 23:40:53 INFO     connecting clients4.google.com:443 from 127.0.0.1:43843
+2015-12-25 23:43:54 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:43:54 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43845
+2015-12-25 23:48:54 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:48:54 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43847
+2015-12-25 23:53:54 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:53:54 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43849
+2015-12-25 23:58:55 WARNING  timed out: mtalk.google.com:5228
+2015-12-25 23:58:55 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43851
+2015-12-26 00:03:56 WARNING  timed out: mtalk.google.com:5228
+2015-12-26 00:03:56 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43853
+2015-12-26 00:04:26 INFO     connecting clients4.google.com:443 from 127.0.0.1:43855
+2015-12-26 00:08:56 WARNING  timed out: mtalk.google.com:5228
+2015-12-26 00:08:56 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43857
+2015-12-26 00:13:21 INFO     connecting clients4.google.com:443 from 127.0.0.1:43859
+2015-12-26 00:14:01 WARNING  timed out: mtalk.google.com:5228
+2015-12-26 00:14:01 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43861
+2015-12-26 00:19:01 WARNING  timed out: mtalk.google.com:5228
+2015-12-26 00:19:01 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43865
+2015-12-26 00:21:57 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43867
+2015-12-26 00:22:03 INFO     connecting clients4.google.com:443 from 127.0.0.1:43875
+2015-12-26 00:22:03 INFO     connecting www.google.com:443 from 127.0.0.1:43876
+2015-12-26 00:22:03 INFO     connecting mtalk.google.com:443 from 127.0.0.1:43877
+2015-12-26 00:27:05 WARNING  timed out: mtalk.google.com:443
+2015-12-26 00:27:05 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43884
+2015-12-26 00:32:12 WARNING  timed out: mtalk.google.com:5228
+2015-12-26 00:32:12 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43890
+2015-12-26 00:37:13 WARNING  timed out: mtalk.google.com:5228
+2015-12-26 00:37:13 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:43892

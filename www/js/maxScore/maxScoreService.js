@@ -4,10 +4,10 @@ define(function() {
 			store2LocalStorage: function(key, value) {
 				localStorage[key] = value;
 			}
-		};
+		}
 
 		return obj;
-	};
+	}
 
 	return maxScoreService;
 })
