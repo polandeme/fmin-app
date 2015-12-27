@@ -14,4 +14,7 @@ use ion-span instead of ion-content
 http://segmentfault.com/a/1190000002390643 require-css
 https://github.com/castillo-io/angular-css angular-css 
 
+ionci server ip address  
+https://forum.ionicframework.com/t/ionic-serve-to-start-on-specific-ip/22315/2
+
 

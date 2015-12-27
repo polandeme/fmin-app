@@ -1,5 +1,5 @@
 define(['jqueryColor'], function() {
-	var baseService = function(maxScoreService) {
+	var baseService = function($location, maxScoreService) {
 		console.log(maxScoreService);
 		// var girdItme = '<li class="col col-25 base-cell-item"></li>'
 		var itemGroup = $('.base-cell-item');
@@ -116,8 +116,58 @@ define(['jqueryColor'], function() {
 			 * @TODO 添加分解类型参数
 			 */
 			 getExp: function(num) {
-			 	var args = parseInt(num / 5);
-			 	return (args).toString() + '*' + 5 ;
+			 		n = num; 
+					k = 2; 
+					var arr = [];
+					var str = '';
+					while(k <= n) { 
+						if(k == n) {
+							str += (n).toString();
+							arr.push(n);
+							break;
+						} else if( n % k == 0) {
+							str += k + "*";
+							n = n / k;
+							arr.push(k);
+						} else {
+							k++; 
+						}
+					} 
+					var exp = this.arr2Exp(arr);
+					return exp;
+					// console.log(str);
+			 },
+			 arr2Exp: function(arr) {
+			 	console.log(arr);
+			 	if(arr.length == 1) {
+			 		return arr;
+			 	} else {
+			 		//dichotomy
+			 		var dich = Math.floor(arr.length / 2);
+			 		console.log('dich=' + dich);
+
+			 		console.log('math.leng=' + arr.length);
+			 		// multiplier
+			 		var mult1 = 1;
+			 		var mult2 = 1;
+			 		for(var i = 0; i < dich; i++) {
+			 			console.log( i + '=' + arr[i]);
+			 			mult1 *= arr[i]; 
+			 		}
+			 		for(var i = dich; i < arr.length; i++) {
+			 			console.log( i + '=' + arr[i]);
+			 			mult2 *= arr[i];
+			 		}
+			 		console.log(mult1);
+			 		console.log(mult2);
+			 		var str = '';
+			 		str += mult1.toString();
+			 		str += '*';
+			 		str += mult2.toString();
+			 		// var html = '>'
+			 		return str;
+			 		// return 
+			 	}
 			 },
 			//倒计时模块 
 			timeDown: function(cont) {
@@ -157,6 +207,8 @@ define(['jqueryColor'], function() {
 							clearInterval(msTimer);
 							maxScoreService.stroeMaxScore($('.score').text());
 							self.unbindHandleClick();
+							$location.path('#/max-score');
+
 						}
 					}
 					--counter; //位置
