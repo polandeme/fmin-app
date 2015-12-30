@@ -6,6 +6,7 @@
 require.config({
     paths: {
         cordova: '../cordova',
+        ngCordova: './lib/ng-cordova.min',
         angular: '../lib/ionic/js/angular/angular',
         angularAnimate: '../lib/ionic/js/angular/angular-animate',
         // angularTouch: '../lib/ionic/js/angular/angular-touch',
@@ -20,6 +21,7 @@ require.config({
     shim: {
         'angular' : {'exports' : 'angular'},
         'angularAnimate' : ['angular'],
+        'ngCordova': ['angular'],
         'jquery': '$',
         'jqueryColor': {
             deps: ['jquery'],
@@ -37,12 +39,13 @@ require.config({
 });
 
 require( [
-    'cordova',
     'ionic',
     'angular',
+    'ngCordova',
+    'cordova',
     'app',
     'jquery',
-    'routes'], function(cordova, ionic, angular, app, $) {
+    'routes'], function(ionic, angular, ngCordova, cordova, app, $) {
     'use strict';
 
     var start  = function(){

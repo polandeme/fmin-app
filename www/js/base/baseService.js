@@ -1,5 +1,6 @@
 define(['jqueryColor'], function() {
-	var baseService = function($location, maxScoreService) {
+	var baseService = function($cordovaFileTransfer, $http, $location, maxScoreService) {
+		console.log($cordovaFileTransfer);
 		console.log(maxScoreService);
 		// var girdItme = '<li class="col col-25 base-cell-item"></li>'
 		var itemGroup = $('.base-cell-item');
@@ -8,6 +9,51 @@ define(['jqueryColor'], function() {
 		var totleTime = 60;
 		var obj = {
 			score: 0,
+			url: 'http://192.168.1.102:3000/api/v1/img/maxScore',
+			//image module 
+			// @TODO 单独一个module
+			getImage: function() {
+				$http({
+					method: 'GET',
+					url: this.url
+				}).then(function successCallback(data) {
+					console.log(data);
+				}, function errorCallback(error) {
+					console.log(error);
+				})
+			},
+			saveImage: function() {
+				console.log(cordova);
+				ionic.Platform.ready(function() {
+					if(window.cordova) {
+						document.addEventListener("deviceready", function() {
+							alert('deviceready');
+							var url = "http://cdn.wall-pix.net/albums/art-space/00030109.jpg";
+						    var targetPath = cordova.file.applicationStorageDirectory + "testImage.png";
+						    var trustHosts = true
+						    var options = {};
+						    alert(targetPath);
+						    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
+						      .then(function(result) {
+						        // Success!
+						        alert(targetPath);
+						        alert('targetPath');
+						      }, function(err) {
+						        // Error
+						        alert(err);
+						      }, function (progress) {
+						      	// alert('progress');
+						        // $timeout(function () {
+						        //   $scope.downloadProgress = (progress.loaded / progress.total) * 100;
+						        // })
+						      });
+
+						}, false);
+					} else {
+						alert('device not ready');
+					}
+				});
+			},
 			createRandomNum: function(base) {
 				var base = base || 10;
 				var num_one = Math.floor(Math.random() * base);
@@ -51,6 +97,7 @@ define(['jqueryColor'], function() {
 				var self = this;
 				$('body').on('click', '.right-cell', function(e) {
 					// count++;
+					self.saveImage();
 					// alert('handleClick click right-cell');
 					var score = $('.score').text();
 					score++;
@@ -218,6 +265,7 @@ define(['jqueryColor'], function() {
 
 			//start time 点击任意方块开始计时
 			start: function(cont) {
+				this.getImage();
 				var self = this;
 				var totleTime = totleTime;
 				if(arguments.length == 0) {

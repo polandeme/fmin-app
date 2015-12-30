@@ -30,6 +30,7 @@ define(['angular',
         'use strict';
         return ng.module('fmin', [
           'ionic',
+          'ngCordova',
           'fmin.baseModule',
           'fmin.maxScoreModule' 
         ]);
