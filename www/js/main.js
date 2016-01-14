@@ -12,6 +12,7 @@ require.config({
         // angularTouch: '../lib/ionic/js/angular/angular-touch',
         angularSanitize: '../lib/ionic/js/angular/angular-sanitize',
         uiRouter: '../lib/ionic/js/angular-ui/angular-ui-router',
+        angularCss: './lib/angular-css-injector.min',
         ionic: '../lib/ionic/js/ionic',
         angularIonic: '../lib/ionic/js/ionic-angular',
         jquery: './lib/jquery-1.11.3.min',
@@ -26,6 +27,10 @@ require.config({
         'jqueryColor': {
             deps: ['jquery'],
             exports: 'jqueryColor'
+        },
+        'angularCss': {
+            deps: ['angular'],
+            exports: 'angularCss'
         },
         // 'angularTouch' : ['angular'],
         'angularSanitize' : ['angular'],
@@ -45,7 +50,8 @@ require( [
     'cordova',
     'app',
     'jquery',
-    'routes'], function(ionic, angular, ngCordova, cordova, app, $) {
+    'angularCss',
+    'routes'], function(ionic, angular, ngCordova, cordova, app, $, angularCss) {
     'use strict';
 
     var start  = function(){

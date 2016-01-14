@@ -1,5 +1,5 @@
 define(['jqueryColor'], function() {
-	var baseService = function($cordovaFileTransfer, $http, $location, maxScoreService) {
+	var baseService = function($cordovaFile, $cordovaFileTransfer, $http, $location, maxScoreService) {
 		console.log($cordovaFileTransfer);
 		console.log(maxScoreService);
 		// var girdItme = '<li class="col col-25 base-cell-item"></li>'
@@ -9,7 +9,7 @@ define(['jqueryColor'], function() {
 		var totleTime = 60;
 		var obj = {
 			score: 0,
-			url: 'http://192.168.1.102:3000/api/v1/img/maxScore',
+			url: 'http://192.168.1.113:3000/api/v1/img/maxScore',
 			//image module 
 			// @TODO 单独一个module
 			getImage: function() {
@@ -23,24 +23,80 @@ define(['jqueryColor'], function() {
 				})
 			},
 			saveImage: function() {
-				console.log(cordova);
 				ionic.Platform.ready(function() {
 					if(window.cordova) {
+
+					    document.addEventListener("deviceready", onDeviceReady, false);
+        
+				        function onDeviceReady() 
+				        {
+				            requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, onError);
+				        }
+				        
+				        function onSuccess(fileSystem) 
+				        {   
+				            var directoryEntry = fileSystem.root;
+				            
+				            //create a directory using getDirectory. If already exists it returns a pointer only.
+				            directoryEntry.getDirectory("new_directory", {create: true, exclusive: false}, function(directoryEntry_1){
+				                //for any operation inside this directory use directoryEntry_1 object.
+				            }, function(error){
+				              alert("Error occurred while getting pointer to new directory. Error code is: " + error.code);
+				            });
+				        }
+				        
+				        function onError(evt)
+				        {
+				            console.log("Error occurred during request to file system pointer. Error code is: " + evt.code);
+				        }
+
 						document.addEventListener("deviceready", function() {
-							alert('deviceready');
+							alert(cordova.file.dataDirectory);
+
+							// $cordovaFile.writeFile( 'file.txt', data, {'append':false} ).then( function(result) {
+							//         alert('retate file.txt');// Success!
+							// }, function(err) {
+							// 	alert(err);
+							// });
+						var absolutePath = '';
+						var relativePath = '';
+
+						window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSys) {
+
+						            fileSys.root.getDirectory('', { create: true, exclusive: false }, function (dir) {
+
+						                if (ionic.Platform.isAndroid()) {
+						                    var rootDirectory = dir.toURL();
+						                    absolutePath = cordova.file.externalDataDirectory;
+						                    if (absolutePath.indexOf(rootDirectory) === 0) {
+						                        relativePath = absolutePath.replace(rootDirectory, '');
+						                        alert(relativePath);
+	                							
+						                    }                        
+						                } else if (ionic.Platform.isIOS()) {
+						                    // same as @pcr above
+						                }
+
+						            }, onFail);
+						        }, onFail);
+						function onFail() {
+							alert('onFail');
+						}
+
 							var url = "http://cdn.wall-pix.net/albums/art-space/00030109.jpg";
-						    var targetPath = cordova.file.applicationStorageDirectory + "testImage.png";
+						    var targetPath = cordova.file.externalDataDirectory + "testImage.png";
 						    var trustHosts = true
 						    var options = {};
-						    alert(targetPath);
 						    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
 						      .then(function(result) {
 						        // Success!
-						        alert(targetPath);
-						        alert('targetPath');
+						        $cordovaFile.writeFile( 'file.txt', data, {'append':false} ).then( function(result) {
+												        alert('retate file.txt');// Success!
+												}, function(err) {
+													alert(err);
+												})
 						      }, function(err) {
 						        // Error
-						        alert(err);
 						      }, function (progress) {
 						      	// alert('progress');
 						        // $timeout(function () {
@@ -50,7 +106,6 @@ define(['jqueryColor'], function() {
 
 						}, false);
 					} else {
-						alert('device not ready');
 					}
 				});
 			},

@@ -24,6 +24,10 @@ define(['./app'], function(app) {
 				url: '/max-score',
 				cache: false,
 				templateUrl: 'templates/max-score.html'
+			})
+			.state('chs', {
+				url: '/chs',
+				templateUrl: 'templates/chs.html'
 			});
 
         $urlRouterProvider.otherwise('/home');

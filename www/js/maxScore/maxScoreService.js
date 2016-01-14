@@ -9,10 +9,6 @@ define(function() {
 			 */
 			stroeMaxScore: function(value) {
 				var curScore = window.localStorage.getItem('maxScore');
-				console.log(curScore);
-				console.log(value);
-				console.log(curScore > value);
-				console.log('------------');
 				parseInt(curScore) > parseInt(value) ? console.log('没有破记录') : window.localStorage.setItem('maxScore', value);
 			},
 			readMaxScore: function() {

@@ -1,5 +1,7 @@
 define(function () {
-	return function ($scope, $location, $ionicPopup, baseService) {
+	return function ($scope, $location, $ionicPopup, cssInjector, baseService) {
+		console.log(cssInjector);
+		cssInjector.add('../css/base.css');
 		baseService.unbindHandleClick();
 		// baseService.refrest();
 		baseService.initInsertNum();

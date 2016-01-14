@@ -1,6 +1,9 @@
 @bg-color: #8DC86C;
 @grid-border-color: #A1A31E;
 @score-bg-color: #468EC9;
+@chs-bg-color: #E7E0B2;
+@chs-grid-border-color: #BEB083;
+
 //fixed default .row 
 .cell-wrapper {
   height: 100%;
@@ -36,10 +39,10 @@
 }
 
 //base.less 
-.base-wrap {
+.base-wrap, .chs-wrap {
   background: @bg-color;
 }
-.base-header-bar {
+.base-header-bar, .chs-header-bar {
   height: 7%;
   border: none;
   border: 0px !important;
@@ -85,19 +88,19 @@
   text-align: right;
 }
 
-.base-cell-warp {
+.base-cell-warp, .chs-cell-warp{
   top: 7%;
   height: 90%;
   margin-top: 5%;
   background-color: @bg-color;
   // border: 1px solid blue;
 }
-.base-cell-gruop {
+.base-cell-group, .chs-cell-group {
   height: 100%;
   flex-flow: row wrap;
   padding: 0;
 }
-.base-cell-item {
+.base-cell-item, .chs-cell-item {
   display: flex;
   height: 25%;
   justify-content: center;
@@ -115,7 +118,7 @@
 .has-bottom-border {
   border-bottom: 1px solid @grid-border-color;
 }
-.base-cell-item span {
+.base-cell-item span, .chs-cell-item span{
   color: #E0E0F8;
   font-size: 40px;
   // font-weight: 600;
@@ -156,3 +159,20 @@
 .ret-share {
   background-color: red;
 }
+
+//chs page
+.chs-cell-item {
+  height: 20%;
+  border-left: none;
+  font-size: 2em;
+  border-color: @chs-grid-border-color;
+}
+.chs-cell-warp {
+  height: 80%;
+}
+.chs-wrap, .chs-cell-warp, .chs-header-bar {
+  background: @chs-bg-color;
+  color: #8F7F4D;
+}
+
+// .chs-cell-warp

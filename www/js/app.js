@@ -25,13 +25,16 @@
 define(['angular',
         'angularIonic',
         'base/baseModule',
-        'maxScore/maxScoreModule'
+        'maxScore/maxScoreModule',
+        'chs/chsModule'
        ], function(ng) {
         'use strict';
         return ng.module('fmin', [
           'ionic',
+          'angular.css.injector',
           'ngCordova',
           'fmin.baseModule',
-          'fmin.maxScoreModule' 
+          'fmin.maxScoreModule',
+          'fmin.chsModule'
         ]);
 });
