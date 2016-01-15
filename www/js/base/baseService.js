@@ -25,87 +25,50 @@ define(['jqueryColor'], function() {
 			saveImage: function() {
 				ionic.Platform.ready(function() {
 					if(window.cordova) {
-
-					    document.addEventListener("deviceready", onDeviceReady, false);
-        
-				        function onDeviceReady() 
-				        {
-				            requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, onError);
-				        }
-				        
-				        function onSuccess(fileSystem) 
-				        {   
-				            var directoryEntry = fileSystem.root;
-				            
-				            //create a directory using getDirectory. If already exists it returns a pointer only.
-				            directoryEntry.getDirectory("new_directory", {create: true, exclusive: false}, function(directoryEntry_1){
-				                //for any operation inside this directory use directoryEntry_1 object.
-				            }, function(error){
-				              alert("Error occurred while getting pointer to new directory. Error code is: " + error.code);
-				            });
-				        }
-				        
-				        function onError(evt)
-				        {
-				            console.log("Error occurred during request to file system pointer. Error code is: " + evt.code);
-				        }
-
-						document.addEventListener("deviceready", function() {
-							alert(cordova.file.dataDirectory);
-
-							// $cordovaFile.writeFile( 'file.txt', data, {'append':false} ).then( function(result) {
-							//         alert('retate file.txt');// Success!
-							// }, function(err) {
-							// 	alert(err);
-							// });
-						var absolutePath = '';
-						var relativePath = '';
-
-						window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSys) {
-
-						            fileSys.root.getDirectory('', { create: true, exclusive: false }, function (dir) {
-
-						                if (ionic.Platform.isAndroid()) {
-						                    var rootDirectory = dir.toURL();
-						                    absolutePath = cordova.file.externalDataDirectory;
-						                    if (absolutePath.indexOf(rootDirectory) === 0) {
-						                        relativePath = absolutePath.replace(rootDirectory, '');
-						                        alert(relativePath);
-	                							
-						                    }                        
-						                } else if (ionic.Platform.isIOS()) {
-						                    // same as @pcr above
-						                }
-
-						            }, onFail);
-						        }, onFail);
-						function onFail() {
-							alert('onFail');
-						}
-
-							var url = "http://cdn.wall-pix.net/albums/art-space/00030109.jpg";
+						    var url = "http://statics.zhid58.com/img/zhidian_blue.png";
 						    var targetPath = cordova.file.externalDataDirectory + "testImage.png";
 						    var trustHosts = true
 						    var options = {};
+
 						    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
 						      .then(function(result) {
 						        // Success!
-						        $cordovaFile.writeFile( 'file.txt', data, {'append':false} ).then( function(result) {
-												        alert('retate file.txt');// Success!
-												}, function(err) {
-													alert(err);
-												})
+						        alert('success');
 						      }, function(err) {
+						      	alert('err');
+						      	for(k in err) {
+						      		alert(k);
+						      		alert(err[k]);
+						      	}
 						        // Error
 						      }, function (progress) {
-						      	// alert('progress');
 						        // $timeout(function () {
 						        //   $scope.downloadProgress = (progress.loaded / progress.total) * 100;
 						        // })
-						      });
+						      }, false);
 
-						}, false);
+						   // });
+						// document.addEventListener("deviceready", function() {
+						// 	var absolutePath = '';
+						// 	var relativePath = '';
+
+						// 	var url = "http://statics.zhid58.com/img/zhidian_blue.png";
+						// 	var targetPath = cordova.file.externalDataDirectory + "testImage.png"; // assert file
+						// 	alert(targetPath);
+						// 	var trustHosts = true
+						// 	var options = {};
+						// 	    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
+						// 	      .then(function(result) {
+						// 	        // Success!
+						// 	        alert('success');
+						// 	      }, function(err) {
+						// 	        // Error
+						// 	        alert('err');
+						// 	      });
+
+						// 	}, false);
 					} else {
+						console.log('not deviceready');
 					}
 				});
 			},
@@ -152,7 +115,7 @@ define(['jqueryColor'], function() {
 				var self = this;
 				$('body').on('click', '.right-cell', function(e) {
 					// count++;
-					self.saveImage();
+					// self.saveImage();
 					// alert('handleClick click right-cell');
 					var score = $('.score').text();
 					score++;
@@ -320,7 +283,7 @@ define(['jqueryColor'], function() {
 
 			//start time 点击任意方块开始计时
 			start: function(cont) {
-				this.getImage();
+				// this.getImage();
 				var self = this;
 				var totleTime = totleTime;
 				if(arguments.length == 0) {
