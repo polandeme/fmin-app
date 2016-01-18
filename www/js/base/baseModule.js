@@ -4,6 +4,7 @@ define(['angular',
 		], function(angular, baseService, baseController) {
 			var baseModule = angular.module('fmin.baseModule', []);
 				baseModule.factory('fmin.baseService', [
+														'$window',
 														'$cordovaFile',
 														'$cordovaFileTransfer',
 														'$http', 

@@ -1,12 +1,12 @@
 define(['jqueryColor'], function() {
-	var baseService = function($cordovaFile, $cordovaFileTransfer, $http, $location, maxScoreService) {
+	var baseService = function($window, $cordovaFile, $cordovaFileTransfer, $http, $location, maxScoreService) {
 		console.log($cordovaFileTransfer);
 		console.log(maxScoreService);
 		// var girdItme = '<li class="col col-25 base-cell-item"></li>'
 		var itemGroup = $('.base-cell-item');
 		var sTimer = null; // timeInterval timer
 		var msTimer = null; 
-		var totleTime = 60;
+		var totleTime = 10;
 		var obj = {
 			score: 0,
 			url: 'http://192.168.1.113:3000/api/v1/img/maxScore',
@@ -25,48 +25,27 @@ define(['jqueryColor'], function() {
 			saveImage: function() {
 				ionic.Platform.ready(function() {
 					if(window.cordova) {
-						    var url = "http://statics.zhid58.com/img/zhidian_blue.png";
-						    var targetPath = cordova.file.externalDataDirectory + "testImage.png";
-						    var trustHosts = true
-						    var options = {};
+					    var url = "http://statics.zhid58.com/img/zhidian_blue.png";
+					    var targetPath = cordova.file.externalDataDirectory + "testImage.png";
+					    var trustHosts = true
+					    var options = {};
 
-						    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
-						      .then(function(result) {
-						        // Success!
-						        alert('success');
-						      }, function(err) {
-						      	alert('err');
-						      	for(k in err) {
-						      		alert(k);
-						      		alert(err[k]);
-						      	}
-						        // Error
-						      }, function (progress) {
-						        // $timeout(function () {
-						        //   $scope.downloadProgress = (progress.loaded / progress.total) * 100;
-						        // })
-						      }, false);
-
-						   // });
-						// document.addEventListener("deviceready", function() {
-						// 	var absolutePath = '';
-						// 	var relativePath = '';
-
-						// 	var url = "http://statics.zhid58.com/img/zhidian_blue.png";
-						// 	var targetPath = cordova.file.externalDataDirectory + "testImage.png"; // assert file
-						// 	alert(targetPath);
-						// 	var trustHosts = true
-						// 	var options = {};
-						// 	    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
-						// 	      .then(function(result) {
-						// 	        // Success!
-						// 	        alert('success');
-						// 	      }, function(err) {
-						// 	        // Error
-						// 	        alert('err');
-						// 	      });
-
-						// 	}, false);
+					    $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
+					      .then(function(result) {
+					        // Success!
+					        alert('success');
+					      }, function(err) {
+					      	alert('err');
+					      	for(k in err) {
+					      		alert(k);
+					      		alert(err[k]);
+					      	}
+					        // Error
+					      }, function (progress) {
+					        // $timeout(function () {
+					        //   $scope.downloadProgress = (progress.loaded / progress.total) * 100;
+					        // })
+					      }, false);
 					} else {
 						console.log('not deviceready');
 					}
@@ -140,6 +119,7 @@ define(['jqueryColor'], function() {
 					}
 				});
 			},
+
 			randomAgain: function(curNum, base) {
 				var newNum = Math.ceil(Math.random() * 10) + 1;
 				return newNum + curNum;
@@ -209,9 +189,6 @@ define(['jqueryColor'], function() {
 			 	} else {
 			 		//dichotomy
 			 		var dich = Math.floor(arr.length / 2);
-			 		console.log('dich=' + dich);
-
-			 		console.log('math.leng=' + arr.length);
 			 		// multiplier
 			 		var mult1 = 1;
 			 		var mult2 = 1;
@@ -229,9 +206,7 @@ define(['jqueryColor'], function() {
 			 		str += mult1.toString();
 			 		str += '*';
 			 		str += mult2.toString();
-			 		// var html = '>'
 			 		return str;
-			 		// return 
 			 	}
 			 },
 			//倒计时模块 
@@ -241,8 +216,10 @@ define(['jqueryColor'], function() {
 					var counter = $('.time-down-num').text();
 				} else {
 					console.log(cont);
-					var counter = 59;
-					$('.time-down-num').text(59);
+					console.log(totleTime);
+					var counter = (totleTime)--;
+					console.log(counter)
+					$('.time-down-num').text(counter);
 				}
 				sTimer = setInterval(function() {
 					if(counter <= 1) {
@@ -272,8 +249,9 @@ define(['jqueryColor'], function() {
 							clearInterval(msTimer);
 							maxScoreService.stroeMaxScore($('.score').text());
 							self.unbindHandleClick();
-							$location.path('#/max-score');
-
+							console.log('game over');
+							$window.location.href = '#/max-score';
+							console.log($location.path('/max-score'));
 						}
 					}
 					--counter; //位置
