@@ -6,7 +6,7 @@ define(['jqueryColor'], function() {
 		var itemGroup = $('.base-cell-item');
 		var sTimer = null; // timeInterval timer
 		var msTimer = null; 
-		var totleTime = 10;
+		var totleTime = 60;
 		var obj = {
 			score: 0,
 			url: 'http://192.168.1.113:3000/api/v1/img/maxScore',

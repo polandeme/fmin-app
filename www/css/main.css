@@ -147,12 +147,18 @@ div {
   align-items: center;
   color: #FFF;
 }
+.ret-back a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .ret-share {
   background-color: red;
 }
 .chs-cell-item {
   height: 20%;
   border-left: none;
+  font-size: 2em;
   border-color: #BEB083;
 }
 .chs-cell-warp {

@@ -1,3 +1,8 @@
+.menu-wrapper {
+  background-image: url(../img/menu_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .cell-wrapper {
   height: 100%;
   padding: 0;
@@ -11,12 +16,6 @@
   justify-content: center;
   align-items: center;
 }
-.cell-item:nth-child(1) {
-  background: gray;
-}
-.cell-item:nth-child(4) {
-  background: red;
-}
 .cell-item a {
   display: flex;
   width: 100%;
@@ -24,10 +23,11 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  color: #FAEBD7;
 }
 .base-wrap,
 .chs-wrap {
-  background: #8DC86C;
+  background: #332A49;
 }
 .base-header-bar,
 .chs-header-bar {
@@ -37,13 +37,14 @@
   border-bottom-color: transparent !important;
   background-image: none !important;
   border-bottom: none !important;
-  background-color: #8DC86C;
+  background-color: #332A49;
 }
 .pause-btn {
   text-align: left;
   border: none;
+  color: #d5dbe3;
 }
-.time-down {
+.bar-header .time-down {
   font-size: 0;
   text-align: center;
 }
@@ -77,7 +78,7 @@
   top: 7%;
   height: 90%;
   margin-top: 5%;
-  background-color: #8DC86C;
+  background-color: #332A49;
 }
 .base-cell-group,
 .chs-cell-group {
@@ -91,7 +92,7 @@
   height: 25%;
   justify-content: center;
   align-items: center;
-  border: 1px solid #A1A31E;
+  border: 1px solid #f1dc97;
   border-bottom: none;
 }
 .base-cell-item:nth-child(4n-2) {
@@ -102,12 +103,20 @@
   border-right: 0;
 }
 .has-bottom-border {
-  border-bottom: 1px solid #A1A31E;
+  border-bottom: 1px solid #f1dc97;
 }
 .base-cell-item span,
 .chs-cell-item span {
   color: #E0E0F8;
-  font-size: 40px;
+  font-size: 2em;
+}
+.pasue-popup .popup {
+  border-radius: 10px;
+}
+.pasue-popup .popup .row button {
+  background-color: #8A98BA;
+  border-color: #8A98BA;
+  border-radius: 3px;
 }
 .ret-warp-content {
   flex-flow: row wrap;
@@ -140,12 +149,18 @@
   align-items: center;
   color: #FFF;
 }
+.ret-back a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .ret-share {
   background-color: red;
 }
 .chs-cell-item {
   height: 20%;
   border-left: none;
+  font-size: 2em;
   border-color: #BEB083;
 }
 .chs-cell-warp {
