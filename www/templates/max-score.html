@@ -1,13 +1,37 @@
 <ion-view class="ret-wrap" ng-controller="fmin.maxScoreController">
 	<ion-content class="ret-warp-content" scroll="false">
-			<div class="row ret-header">
+		<div class="ret-header row">
+			<div class="ret-avatar">
+				<img src="/img/dog.png">
 			</div>
-			<div class="row ret-content">
-				{{maxScore}}
+
+		</div>
+		<div class="ret-content">
+			<div class="curr-score">
+				<span>45</span>
 			</div>
-			<div class="row ret-footer">
-				<div class="col col-50 ret-share">分享</div>
-				<div class="col col-50 ret-back" ><a ng-href="/#/home" >返回</a></div>
+			<div class="max-score">
+				<span class="max-text">best score:  </span> <span class="max-num">56</span>
 			</div>
+			<div class="ret-motto">
+				<span>
+					据说人的智商是天生的。
+				</span>
+			</div>
+		</div>
+		<div class="ret-footer">
+			<div class="ret-restart">
+				<img src="/img/restart.png">
+			</div>
+		</div>
 	</ion-content>
 </ion-view>
+<!-- <div class="row ret-header">
+</div>
+<div class="row ret-content">
+	{{maxScore}}
+</div>
+<div class="row ret-footer">
+	<div class="col col-50 ret-share">分享</div>
+	<div class="col col-50 ret-back" ><a ng-href="/#/home" >返回</a></div>
+</div> -->
