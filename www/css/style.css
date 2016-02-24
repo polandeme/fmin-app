@@ -175,11 +175,13 @@
 }
 .ret-footer {
   display: flex;
+  flex-wrap: wrap;
   height: 30%;
   justify-content: center;
   align-items: center;
 }
-.ret-footer .ret-restart {
+.ret-footer .ret-restart,
+.ret-footer .go-back {
   max-height: 40%;
   border: 1px solid rebeccapurple;
   width: 70%;
@@ -187,7 +189,8 @@
   background-color: #9f9070;
   border-radius: 45px;
 }
-.ret-footer .ret-restart img {
+.ret-footer .ret-restart img,
+.ret-footer .go-back img {
   width: 17%;
   min-width: 15%;
   max-width: 20%;
