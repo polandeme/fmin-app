@@ -176,15 +176,21 @@
 .ret-footer {
   display: flex;
   height: 30%;
-  margin: 0 !important;
+  justify-content: center;
+  align-items: center;
 }
 .ret-footer .ret-restart {
   max-height: 40%;
   border: 1px solid rebeccapurple;
   width: 70%;
+  text-align: center;
+  background-color: #9f9070;
+  border-radius: 45px;
 }
 .ret-footer .ret-restart img {
-  width: 90%;
+  width: 17%;
+  min-width: 15%;
+  max-width: 20%;
 }
 .chs-cell-item {
   height: 20%;

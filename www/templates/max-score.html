@@ -2,16 +2,17 @@
 	<ion-content class="ret-warp-content" scroll="false">
 		<div class="ret-header row">
 			<div class="ret-avatar">
-				<img src="/img/dog.png">
+				<img src="img/dog.png">
 			</div>
 
 		</div>
 		<div class="ret-content">
 			<div class="curr-score">
-				<span>45</span>
+				<span>{{curScore}}</span>
 			</div>
 			<div class="max-score">
-				<span class="max-text">best score:  </span> <span class="max-num">56</span>
+	
+				<span class="max-text">best score: &nbsp; </span> <span class="max-num">{{maxScore}}</span>
 			</div>
 			<div class="ret-motto">
 				<span>
@@ -21,7 +22,7 @@
 		</div>
 		<div class="ret-footer">
 			<div class="ret-restart">
-				<img src="/img/restart.png">
+				<img src="img/restart.png">
 			</div>
 		</div>
 	</ion-content>

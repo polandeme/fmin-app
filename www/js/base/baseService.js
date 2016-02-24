@@ -6,7 +6,7 @@ define(['jqueryColor'], function() {
 		var itemGroup = $('.base-cell-item');
 		var sTimer = null; // timeInterval timer
 		var msTimer = null; 
-		var totleTime = 60;
+		var totleTime = 9;
 		var obj = {
 			score: 0,
 			url: 'http://192.168.1.113:3000/api/v1/img/maxScore',
@@ -249,9 +249,7 @@ define(['jqueryColor'], function() {
 							clearInterval(msTimer);
 							maxScoreService.stroeMaxScore($('.score').text());
 							self.unbindHandleClick();
-							console.log('game over');
 							$window.location.href = '#/max-score';
-							console.log($location.path('/max-score'));
 						}
 					}
 					--counter; //位置
