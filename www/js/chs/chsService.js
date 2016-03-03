@@ -97,11 +97,12 @@ define(['jqueryColor'], function() {
         msTimer = setInterval(function() {
           var secTime = parseInt($('.time-down-num').text());
           if(counter <= 1) {
-            if(secTime > 0) {
+            if(secTime > 1) {
               counter = 100;
             } else {
               clearInterval(msTimer);
-              maxScoreService.stroeMaxScore($('.score').text(), type);
+              var score = $('.score').text();
+              maxScoreService.stroeMaxScore(score, type);
               self.unbindHandleClick();
               $window.location.href = '#/max-score';
             }
@@ -114,7 +115,6 @@ define(['jqueryColor'], function() {
       //
       unbindHandleClick: function() {
         $('body').off('click', '.chs-cell-item');
-        $('body').off('click', '*');
       },
 
       sucessClickAnim: function() {

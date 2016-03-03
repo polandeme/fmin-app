@@ -244,12 +244,12 @@ define(['jqueryColor'], function() {
 				msTimer = setInterval(function() {
 					var secTime = parseInt($('.time-down-num').text());
 					if(counter <= 1) {
-						if(secTime > 0) {
+						if(secTime > 0) { //bug
 							counter = 100;
 						} else {
-							clearInterval(msTimer);
 							maxScoreService.stroeMaxScore($('.score').text(), type);
 							self.unbindHandleClick();
+							clearInterval(msTimer);
 							$window.location.href = '#/max-score';
 						}
 					}
