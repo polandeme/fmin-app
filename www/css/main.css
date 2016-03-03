@@ -1,14 +1,6 @@
-.test {
-  width: 100px;
-}
-div {
-  clear: both;
-}
 
-.menu-wrapper {
-  background-image: url(../img/menu_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+a {
+  text-decoration: none;
 }
 .cell-wrapper {
   height: 100%;
@@ -31,6 +23,11 @@ div {
   justify-content: center;
   font-size: 2rem;
   color: #FAEBD7;
+}
+.menu-wrapper {
+  background-image: url(../img/menu_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .base-wrap,
 .chs-wrap {
@@ -80,21 +77,18 @@ div {
   font-size: 30px;
   text-align: right;
 }
-.base-cell-warp,
-.chs-cell-warp {
+.base-cell-warp {
   top: 7%;
   height: 90%;
   margin-top: 5%;
   background-color: #332A49;
 }
-.base-cell-group,
-.chs-cell-group {
+.base-cell-group {
   height: 100%;
   flex-flow: row wrap;
   padding: 0;
 }
-.base-cell-item,
-.chs-cell-item {
+.base-cell-item {
   display: flex;
   height: 25%;
   justify-content: center;
@@ -159,41 +153,46 @@ div {
 .ret-content .curr-score span {
   font-size: 100px;
   color: #C4BCAB;
+  line-height: 1;
+}
+.ret-content .max-score {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #47433f;
+}
+.ret-content .ret-motto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: #C4BCAB;
 }
 .ret-footer {
   display: flex;
+  flex-wrap: wrap;
   height: 30%;
-  margin: 0 !important;
-  background: gray;
-}
-.ret-share,
-.ret-back {
-  display: flex;
-  font-size: 40px;
   justify-content: center;
   align-items: center;
-  color: #FFF;
 }
-.ret-back a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+.ret-footer .ret-restart,
+.ret-footer .go-back {
+  max-height: 40%;
+  border: 1px solid rebeccapurple;
+  width: 70%;
+  text-align: center;
+  background-color: #9f9070;
+  border-radius: 45px;
 }
-.ret-share {
-  background-color: red;
-}
-.chs-cell-item {
-  height: 20%;
-  border-left: none;
-  font-size: 2em;
-  border-color: #BEB083;
-}
-.chs-cell-warp {
-  height: 80%;
-}
-.chs-wrap,
-.chs-cell-warp,
-.chs-header-bar {
-  background: #E7E0B2;
-  color: #8F7F4D;
+.ret-footer .ret-restart img,
+.ret-footer .go-back img {
+  width: 17%;
+  min-width: 15%;
+  max-width: 20%;
 }

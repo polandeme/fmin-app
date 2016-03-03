@@ -27,6 +27,7 @@ define(['./app'], function(app) {
 			})
 			.state('chs', {
 				url: '/chs',
+				cache: false,
 				templateUrl: 'templates/chs.html'
 			});
 

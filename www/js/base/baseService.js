@@ -7,6 +7,7 @@ define(['jqueryColor'], function() {
 		var sTimer = null; // timeInterval timer
 		var msTimer = null; 
 		var totleTime = 9;
+		var type = 'base';
 		var obj = {
 			score: 0,
 			url: 'http://192.168.1.113:3000/api/v1/img/maxScore',
@@ -247,7 +248,7 @@ define(['jqueryColor'], function() {
 							counter = 100;
 						} else {
 							clearInterval(msTimer);
-							maxScoreService.stroeMaxScore($('.score').text());
+							maxScoreService.stroeMaxScore($('.score').text(), type);
 							self.unbindHandleClick();
 							$window.location.href = '#/max-score';
 						}
@@ -324,7 +325,7 @@ define(['jqueryColor'], function() {
 			    }, 150, function() {
 			        var self = that;
 			        setTimeout(function(){
-			                self.css("background", "");
+			            self.css("background", "");
 			        },50);
 			    });
 			},

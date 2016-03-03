@@ -1,0 +1,22 @@
+.cell-wrapper {
+  height: 100%;
+  padding: 0;
+  flex-flow: column wrap;
+}
+.cell-item {
+  text-align: center;
+  border: 1px solid #EEE;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell-item a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #FAEBD7;
+}
