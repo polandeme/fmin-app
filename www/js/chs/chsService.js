@@ -1,10 +1,10 @@
 define(['jqueryColor'], function() {
   var chsService = function($window, maxScoreService) {
-    var totleTime = 9;
-    // var score = 0; 
     var type = 'chs';
     var obj ={
       score: 0, 
+      totleTime: 9,
+      backTime: 9,
       initCell: function() {
         this.score = 0;
         var list = $('.chs-cell-item');
@@ -21,7 +21,6 @@ define(['jqueryColor'], function() {
 
       },
       updateCell: function() {
-        console.log('test updateCell');
         var min = 0;
         var max = 24;
         var self = this;
@@ -50,30 +49,23 @@ define(['jqueryColor'], function() {
       //touch start
       // 点击任意cell开始
       touchStart: function() {
-        console.log('touchStart');
         var self = this;
+        this.totleTime = this.backTime;
         $('body').on('click', '.chs-cell-item', function(event) {
           self.timeDown();
           self.msTimeDown();
           $( this ).off( event );
           event.stopPropagation();
-          // $('body').off('click', '*', function() {
-          //   alert('off click');
-          // });
         });
       },
 
       //time down
       timeDown: function(cont) {
-        console.log('time down');
         var cont = cont || false;
         if(cont) {
           var counter = $('.time-down-num').text();
         } else {
-          console.log(cont);
-          console.log(totleTime);
-          var counter = (totleTime)--;
-          console.log(counter)
+          var counter = (this.totleTime)--;
           $('.time-down-num').text(counter);
         }
         sTimer = setInterval(function() {

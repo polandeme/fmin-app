@@ -6,10 +6,11 @@ define(['jqueryColor'], function() {
 		var itemGroup = $('.base-cell-item');
 		var sTimer = null; // timeInterval timer
 		var msTimer = null; 
-		var totleTime = 9;
 		var type = 'base';
 		var obj = {
 			score: 0,
+			totleTime: 9,
+			backTime: 9,
 			url: 'http://192.168.1.113:3000/api/v1/img/maxScore',
 			//image module 
 			// @TODO 单独一个module
@@ -216,9 +217,7 @@ define(['jqueryColor'], function() {
 				if(cont) {
 					var counter = $('.time-down-num').text();
 				} else {
-					console.log(cont);
-					console.log(totleTime);
-					var counter = (totleTime)--;
+					var counter = (this.totleTime)--;
 					console.log(counter)
 					$('.time-down-num').text(counter);
 				}
@@ -260,12 +259,11 @@ define(['jqueryColor'], function() {
 
 			//start time 点击任意方块开始计时
 			start: function(cont) {
-				// this.getImage();
 				var self = this;
-				var totleTime = totleTime;
+				this.totleTime = this.backTime;
 				if(arguments.length == 0) {
 					$('body').on('click', '.base-cell-item', function() {
-						$('.time-down-num').text(--totleTime);
+						$('.time-down-num').text(--this.totleTime);
 						self.timeDown();
 						self.msTimeDown();
 						$('body').off('click', '.base-cell-item');
