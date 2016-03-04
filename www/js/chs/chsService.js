@@ -1,6 +1,8 @@
 define(['jqueryColor'], function() {
   var chsService = function($window, maxScoreService) {
     var type = 'chs';
+    var sTimer = null; // timeInterval timer
+    var msTimer = null; 
     var obj ={
       score: 0, 
       totleTime: 9,
@@ -26,10 +28,15 @@ define(['jqueryColor'], function() {
         var self = this;
         $('body').off('click', '.chs-cell-item');
         $('body').on('click', '.chs-cell-item', function() {
+        // self.totleTime = $('.time-down-num').text();
           if($(this).text() == min) {
             min++;
             max++;
             obj.score++;
+            console.log(self);
+            if(min == 3 || min == 7) {
+              self.dropBall();
+            }
             $(this).text(max);
             self.sucessClickAnim();
             $('.score span').text(obj.score);
@@ -38,6 +45,7 @@ define(['jqueryColor'], function() {
             self.errorClickAnim(that);
           }
         });
+
 
       },
       init: function() {
@@ -60,14 +68,13 @@ define(['jqueryColor'], function() {
       },
 
       //time down
-      timeDown: function(cont) {
-        var cont = cont || false;
-        if(cont) {
-          var counter = $('.time-down-num').text();
-        } else {
-          var counter = (this.totleTime)--;
-          $('.time-down-num').text(counter);
-        }
+      timeDown: function() {
+        this.totleTime -= 1;
+        var counter = this.totleTime;
+        console.log(this);
+        console.log('-----------');
+        $('.time-down-num').text(counter);
+
         sTimer = setInterval(function() {
           if(counter <= 1) {
             clearInterval(sTimer);
@@ -89,14 +96,14 @@ define(['jqueryColor'], function() {
         msTimer = setInterval(function() {
           var secTime = parseInt($('.time-down-num').text());
           if(counter <= 1) {
-            if(secTime > 1) {
+            if(secTime > 0) {
               counter = 100;
             } else {
               clearInterval(msTimer);
               var score = $('.score').text();
               maxScoreService.stroeMaxScore(score, type);
               self.unbindHandleClick();
-              $window.location.href = '#/max-score';
+              // $window.location.href = '#/max-score';
             }
           }
           --counter; //位置
@@ -143,6 +150,44 @@ define(['jqueryColor'], function() {
               },50);
           });
       },
+      // animate ball to add time
+
+      //extTime 增加的菜单时间
+      dropBall: function(extTime) {
+        // var extTime = extTime || 3;
+
+        var extTime = Math.round(Math.random() * 8) + 1;
+        //代优化， 宽度配置
+        var randomLeft = Math.round(Math.random() * (window.innerWidth - $('.ball').width())); 
+
+        var dom = '<div class="ball" >' + extTime+ 'S</div>';
+        var time = 10 - extTime; //time = 10 - added
+
+
+        $('body').append(dom);
+        var height = window.innerHeight;
+        $('.ball').css('left', randomLeft + 'px').animate({
+          top: "+=" + height
+        }, 9 * 1000);
+        this.getBall();
+      }, //end dropBalll
+
+      getBall: function() {
+        var self = this;
+        $('body').one('click', '.ball', function() {
+          
+          this.remove();
+          var time = parseInt($(this).text());
+          console.log(time);
+
+        // self.totleTime = $('.time-down-num').text();
+          self.totleTime = time + parseInt($('.time-down-num').text());
+
+          clearInterval(sTimer);
+          self.timeDown();
+        })
+      } //end getBall
+
     };
     return obj;
   }
