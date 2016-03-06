@@ -1,5 +1,5 @@
 define(['jqueryColor'], function() {
-  var chsService = function($window, maxScoreService) {
+  var speedService = function($window, maxScoreService) {
     var type = 'chs';
     var sTimer = null; // timeInterval timer
     var msTimer = null; 
@@ -14,115 +14,59 @@ define(['jqueryColor'], function() {
         this.totleTime = 10;
         this.errorCount = 0; //3次错误机会
         this.backTime = 10;
-        var list = $('.chs-cell-item');
+        var list = $('.com-cell-item');
         var arr = [];
         var len = list.length;
         for(var i = 0; i < len; i++) {
           arr.push(i);
         }
-        for(i = 0; i < len; i++) {
+        for(i = 0; i < 2; i++) {
           var index = Math.floor(Math.random() * arr.length); // [0, 25)
-          list.eq(i).text(arr[index]);
-          arr.splice(index, 1);
+          list.eq(index).addClass('right');
+          // arr.splice(index, 1);
         }
 
       },
       updateCell: function() {
-        var min = 0;
-        var max = 24;
-        var self = this;
-        $('body').off('click', '.chs-cell-item');
-        $('body').on('click', '.chs-cell-item', function() {
-        // self.totleTime = $('.time-down-num').text();
-          if($(this).text() == min) {
-            min++;
-            max++;
-            obj.score++;
-            if(min == 3 || min == 7) {
-              self.dropBall();
-            }
-            $(this).text(max);
-            self.sucessClickAnim();
-            $('.score span').text(obj.score);
-          } else {
-            var that = $(this);
-            if(self.start) {
-              self.errorClickAnim(that);
-            }            
-          }
-        });
-
-
+        $(".com-cell-item").removeClass('right');
+        var list = $('.com-cell-item');
+        var arr = [];
+        var len = list.length;
+        for(var i = 0; i < len; i++) {
+          arr.push(i);
+        }
+        for(i = 0; i < 2; i++) {
+          var index = Math.floor(Math.random() * arr.length); // [0, 25)
+          list.eq(index).addClass('right');
+        }
       },
       init: function() {
         this.initCell();
-        this.updateCell();
-        this.touchStart();
+        this.cellOut();
+        // this.touchStart();
       },
 
+
+      cellOut: function() {
+        var self = this;
+        $('body').on('click', '.right', function(e) {
+          self.updateCell();
+        });
+      },
       //touch start
       // 点击任意cell开始
       touchStart: function() {
         var self = this;
         this.start = false;
         this.totleTime = this.backTime;
-        $('body').one('click', '.chs-cell-item', function(event) {
+        $('body').one('click', '.com-cell-item', function(event) {
           self.start = true;
-          self.timeDown();
-          self.msTimeDown();
-          $( this ).off( event );
           event.stopPropagation();
         });
       },
-
-      //time down
-      timeDown: function() {
-        this.totleTime -= 1;
-        var counter = this.totleTime;
-        $('.time-down-num').text(counter);
-
-        sTimer = setInterval(function() {
-          if(counter <= 1) {
-            clearInterval(sTimer);
-          }
-          --counter;
-          $('.time-down-num').text(counter);
-        }, 1000);
-      },
-      msTimeDown: function(cont) {
-        // var counter = 100;
-        var cont = cont || false;
-        if(cont) {
-          var counter = $('.time-down-ms-num').text();
-        } else {
-          var counter = 100;
-        }
-        var self = this;
-        // var secTime = parseInt($('.time-down-num').text());
-        msTimer = setInterval(function() {
-          var secTime = parseInt($('.time-down-num').text());
-          if(counter <= 1) {
-            if(secTime > 0) {
-              counter = 100;
-            } else {
-              // clearInterval(msTimer);
-              // clearInterval(sTimer);
-              // var score = $('.score').text();
-              // maxScoreService.stroeMaxScore(score, type);
-              // self.unbindHandleClick();
-              // $window.location.href = '#/max-score';
-
-              self.gameOver();
-            }
-          }
-          --counter; //位置
-          $('.time-down-ms-num').text(counter);
-        }, 10)
-      },
-
       //
       unbindHandleClick: function() {
-        $('body').off('click', '.chs-cell-item');
+        $('body').off('click', '.com-cell-item');
       },
 
       sucessClickAnim: function() {
@@ -215,5 +159,5 @@ define(['jqueryColor'], function() {
     return obj;
   }
 
-  return chsService;
+  return speedService;
 })

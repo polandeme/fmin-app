@@ -29,6 +29,11 @@ define(['./app'], function(app) {
 				url: '/chs',
 				cache: false,
 				templateUrl: 'templates/chs.html'
+			})
+			.state('speed', {
+				url: '/speed',
+				cache: false,
+				templateUrl: 'templates/speed.html'
 			});
 
         $urlRouterProvider.otherwise('/home');
