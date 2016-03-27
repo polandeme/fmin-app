@@ -3,6 +3,8 @@ define(['jqueryColor'], function() {
     var type = 'chs';
     var sTimer = null; // timeInterval timer
     var msTimer = null; 
+    var targetNum = 0;
+    var count = 0;
     var obj ={
       score: 0, 
       totleTime: 10,
@@ -22,13 +24,39 @@ define(['jqueryColor'], function() {
         }
         for(i = 0; i < 2; i++) {
           var index = Math.floor(Math.random() * arr.length); // [0, 25)
-          list.eq(index).addClass('right');
+          var target = 'target-' + (i + 1);
+          while(list.eq(index).hasClass('right')) {
+            var index = Math.floor(Math.random() * arr.length); // [0, 25)
+          }
+          list.eq(index).addClass('right ' + target);
           // arr.splice(index, 1);
         }
 
       },
+
+      itemInterVal: function() {
+        var self = this;
+        sTimer = setInterval(function() {
+          if(targetNum < 2) {
+            console.log(' time over hide ');
+            // clearInterval(sTimer);
+
+            self.updateCell();
+                // self.cellOut();
+            // clearInterval(sTimer);
+
+          } else {
+            // clearInterval(sTimer);
+          }
+        }, 1000);
+      },
       updateCell: function() {
-        $(".com-cell-item").removeClass('right');
+        targetNum = 0;
+        console.log('updateCell');
+        $(".com-cell-item").removeClass('right target-1 target-2');
+        clearInterval(sTimer);
+        this.itemInterVal();
+        this.cellOut(); 
         var list = $('.com-cell-item');
         var arr = [];
         var len = list.length;
@@ -37,7 +65,8 @@ define(['jqueryColor'], function() {
         }
         for(i = 0; i < 2; i++) {
           var index = Math.floor(Math.random() * arr.length); // [0, 25)
-          list.eq(index).addClass('right');
+          var target = 'target-' + (i + 1);
+          list.eq(index).addClass('right ' + target);
         }
       },
       init: function() {
@@ -49,8 +78,43 @@ define(['jqueryColor'], function() {
 
       cellOut: function() {
         var self = this;
-        $('body').on('click', '.right', function(e) {
-          self.updateCell();
+        $('body').one('click', '.right', function(e) {
+
+        $('body').off('click', '.right', function(e) {
+          console.log('off click');
+        });
+        $('.right').unbind('click', function() {
+          console.log('unbind');
+        })
+          console.log('click');
+
+          targetNum++;
+          console.log(count);
+          if(count == 0) {
+            self.itemInterVal();
+            count++;
+          } else {
+            // self.itemInterVal();
+            // count++;
+          }
+
+          if($(this).hasClass('target-1')) {
+            $('body').one('click', '.target-2', function(e) {
+              targetNum++;
+              if(targetNum > 1) {
+                self.updateCell();
+              }
+            })
+          } else {
+              $('body').one('click', '.target-1', function(e) {
+              targetNum++;
+              if(targetNum > 1) {
+                self.updateCell();
+              }
+            })
+          }
+          // self.updateCell();
+          e.stopPropagation();
         });
       },
       //touch start
