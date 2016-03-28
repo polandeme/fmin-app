@@ -78,14 +78,12 @@ define(['jqueryColor'], function() {
 
       cellOut: function() {
         var self = this;
-        $('body').one('click', '.right', function(e) {
+        $('body').one('touchstart', '.right', function(e) {
 
-        $('body').off('click', '.right', function(e) {
+        $('body').off('touchstart', '.right', function(e) {
           console.log('off click');
         });
-        $('.right').unbind('click', function() {
-          console.log('unbind');
-        })
+        
           console.log('click');
 
           targetNum++;
@@ -99,14 +97,14 @@ define(['jqueryColor'], function() {
           }
 
           if($(this).hasClass('target-1')) {
-            $('body').one('click', '.target-2', function(e) {
+            $('body').one('touchstart', '.target-2', function(e) {
               targetNum++;
               if(targetNum > 1) {
                 self.updateCell();
               }
             })
           } else {
-              $('body').one('click', '.target-1', function(e) {
+              $('body').one('touchstart', '.target-1', function(e) {
               targetNum++;
               if(targetNum > 1) {
                 self.updateCell();
@@ -123,14 +121,14 @@ define(['jqueryColor'], function() {
         var self = this;
         this.start = false;
         this.totleTime = this.backTime;
-        $('body').one('click', '.com-cell-item', function(event) {
+        $('body').one('touchstart', '.com-cell-item', function(event) {
           self.start = true;
           event.stopPropagation();
         });
       },
       //
       unbindHandleClick: function() {
-        $('body').off('click', '.com-cell-item');
+        $('body').off('touchstart', '.com-cell-item');
       },
 
       sucessClickAnim: function() {
