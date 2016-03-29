@@ -38,21 +38,21 @@ define(['jqueryColor'], function() {
         var self = this;
         sTimer = setInterval(function() {
           if(targetNum < 2) {
-            console.log(' time over hide ');
             // clearInterval(sTimer);
 
             self.updateCell();
+            self.unbindHandleClick();
                 // self.cellOut();
             // clearInterval(sTimer);
 
           } else {
-            // clearInterval(sTimer);
+            clearInterval(sTimer);
           }
-        }, 1000);
+        }, 4000);
       },
       updateCell: function() {
         targetNum = 0;
-        console.log('updateCell');
+        this.unbindHandleClick();
         $(".com-cell-item").removeClass('right target-1 target-2');
         clearInterval(sTimer);
         this.itemInterVal();
@@ -66,6 +66,10 @@ define(['jqueryColor'], function() {
         for(i = 0; i < 2; i++) {
           var index = Math.floor(Math.random() * arr.length); // [0, 25)
           var target = 'target-' + (i + 1);
+
+          while(list.eq(index).hasClass('right')) {
+            var index = Math.floor(Math.random() * arr.length); // [0, 25)
+          }
           list.eq(index).addClass('right ' + target);
         }
       },
@@ -78,36 +82,48 @@ define(['jqueryColor'], function() {
 
       cellOut: function() {
         var self = this;
-        $('body').one('touchstart', '.right', function(e) {
+        $('body').off('touchstart', '.right').one('touchstart', '.right', function(e) {
 
-        $('body').off('touchstart', '.right', function(e) {
-          console.log('off click');
-        });
-        
+        self.unbindHandleClick();
           console.log('click');
 
           targetNum++;
-          console.log(count);
           if(count == 0) {
             self.itemInterVal();
             count++;
           } else {
+
             // self.itemInterVal();
             // count++;
           }
 
           if($(this).hasClass('target-1')) {
-            $('body').one('touchstart', '.target-2', function(e) {
+            $('body').off('touchstart', '.target-2').one('touchstart', '.target-2', function(e) {
               targetNum++;
+              console.log('.target-2');
               if(targetNum > 1) {
                 self.updateCell();
+              } else {
+                $('body').off('touchstart', '.right', function(e) {
+                  console.log('off click');
+                });
+                self.updateCell();
+                // self.itemInterVal();
               }
             })
           } else {
-              $('body').one('touchstart', '.target-1', function(e) {
+              $('body').off('touchstart', '.target-1').one('touchstart', '.target-1', function(e) {
               targetNum++;
+              console.log('target-1..............');
               if(targetNum > 1) {
                 self.updateCell();
+              } else {
+                $('body').off('touchstart', '.right', function(e) {
+                  console.log('off click');
+                });
+                self.updateCell();
+
+                // self.itemInterVal();
               }
             })
           }
@@ -128,7 +144,8 @@ define(['jqueryColor'], function() {
       },
       //
       unbindHandleClick: function() {
-        $('body').off('touchstart', '.com-cell-item');
+        $('body').off('touchstart', '.com-cell-item', function(e) {
+        });
       },
 
       sucessClickAnim: function() {
