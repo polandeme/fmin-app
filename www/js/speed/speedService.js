@@ -5,6 +5,7 @@ define(['jqueryColor'], function() {
     var msTimer = null; 
     var targetNum = 0;
     var count = 0;
+    var n = 0; //倒计时次数；
     var obj ={
       score: 0, 
       totleTime: 10,
@@ -36,20 +37,18 @@ define(['jqueryColor'], function() {
 
       itemInterVal: function() {
         var self = this;
+        n++;
+        var nt = n > 200 ? 200 : n;
         sTimer = setInterval(function() {
           if(targetNum < 2) {
-            // clearInterval(sTimer);
-
             self.updateCell();
             self.unbindHandleClick();
-                // self.cellOut();
-            // clearInterval(sTimer);
-
           } else {
             clearInterval(sTimer);
           }
-        }, 4000);
+        }, 2000 - (nt * 5));
       },
+
       updateCell: function() {
         targetNum = 0;
         this.unbindHandleClick();
@@ -79,7 +78,6 @@ define(['jqueryColor'], function() {
         // this.touchStart();
       },
 
-
       cellOut: function() {
         var self = this;
         $('body').off('touchstart', '.right').one('touchstart', '.right', function(e) {
@@ -92,42 +90,30 @@ define(['jqueryColor'], function() {
             self.itemInterVal();
             count++;
           } else {
-
-            // self.itemInterVal();
-            // count++;
+            count++;
           }
 
           if($(this).hasClass('target-1')) {
             $('body').off('touchstart', '.target-2').one('touchstart', '.target-2', function(e) {
               targetNum++;
-              console.log('.target-2');
               if(targetNum > 1) {
                 self.updateCell();
               } else {
                 $('body').off('touchstart', '.right', function(e) {
-                  console.log('off click');
                 });
                 self.updateCell();
-                // self.itemInterVal();
               }
             })
           } else {
               $('body').off('touchstart', '.target-1').one('touchstart', '.target-1', function(e) {
               targetNum++;
-              console.log('target-1..............');
               if(targetNum > 1) {
                 self.updateCell();
               } else {
-                $('body').off('touchstart', '.right', function(e) {
-                  console.log('off click');
-                });
                 self.updateCell();
-
-                // self.itemInterVal();
               }
             })
           }
-          // self.updateCell();
           e.stopPropagation();
         });
       },
