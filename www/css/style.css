@@ -158,6 +158,16 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.menu-wrapper .cell-item {
+  border-top: none;
+  border-left: none;
+}
+.menu-wrapper .cell-item:nth-child(even) {
+  border-bottom: none;
+}
+.menu-wrapper .cell-item a {
+  color: #efecc1;
+}
 .base-wrap,
 .chs-wrap {
   background: #332A49;

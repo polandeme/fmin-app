@@ -4,6 +4,7 @@ define(['jqueryColor'], function() {
     var sTimer = null; // timeInterval timer
     var msTimer = null; 
     var targetNum = 0;
+    var score = 0;
     var count = 0;
     var n = 0; //倒计时次数；
     var obj ={
@@ -97,6 +98,8 @@ define(['jqueryColor'], function() {
             $('body').off('touchstart', '.target-2').one('touchstart', '.target-2', function(e) {
               targetNum++;
               if(targetNum > 1) {
+                score++;
+                $('.score-num').text(score);
                 self.updateCell();
               } else {
                 $('body').off('touchstart', '.right', function(e) {
@@ -108,6 +111,8 @@ define(['jqueryColor'], function() {
               $('body').off('touchstart', '.target-1').one('touchstart', '.target-1', function(e) {
               targetNum++;
               if(targetNum > 1) {
+                score++;
+                $('.score-num').text(score);
                 self.updateCell();
               } else {
                 self.updateCell();
