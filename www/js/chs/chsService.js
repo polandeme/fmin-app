@@ -84,6 +84,8 @@ define(['jqueryColor'], function() {
         sTimer = setInterval(function() {
           if(counter <= 1) {
             clearInterval(sTimer);
+          } else {
+
           }
           --counter;
           $('.time-down-num').text(counter);
@@ -93,25 +95,21 @@ define(['jqueryColor'], function() {
         // var counter = 100;
         var cont = cont || false;
         if(cont) {
-          var counter = $('.time-down-ms-num').text();
+          var counter = $('.time-down-ms-num').text() || clearInterval(msTimer);
         } else {
           var counter = 100;
         }
         var self = this;
         // var secTime = parseInt($('.time-down-num').text());
         msTimer = setInterval(function() {
-          var secTime = parseInt($('.time-down-num').text());
+          //dom 缓存
+          // 减少dom使用
+          var secTime = isNaN(parseInt($('.time-down-num').text())) ? 
+                        self.reset() : parseInt($('.time-down-num').text());
           if(counter <= 1) {
             if(secTime > 0) {
               counter = 100;
             } else {
-              // clearInterval(msTimer);
-              // clearInterval(sTimer);
-              // var score = $('.score').text();
-              // maxScoreService.stroeMaxScore(score, type);
-              // self.unbindHandleClick();
-              // $window.location.href = '#/max-score';
-
               self.gameOver();
             }
           }
@@ -148,6 +146,24 @@ define(['jqueryColor'], function() {
           }, 600,function(){ i.remove(); });
 
           event.stopPropagation();
+      },
+      reset: function() {
+        console.log('reset speed');
+        clearInterval(msTimer);
+        clearInterval(sTimer);
+        $('body').off('click', '.base-cell-item'); //base-cell-item
+
+
+      },
+      handleBack: function() {
+        ionic.Platform.ready(function() {
+          if(window.cordova) {
+            document.addEventListener("backbutton", function() {
+              this.reset();
+            }, false);
+          } else {
+          }
+        });
       },
       errorClickAnim: function(that) {
         this.errorCount ++;
@@ -202,6 +218,7 @@ define(['jqueryColor'], function() {
 
       //game over 
       gameOver: function(score) {
+        $('.time-down-ms-num').text('00');
         var score = $('.score').text();
         clearInterval(msTimer);
         clearInterval(sTimer);

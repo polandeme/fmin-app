@@ -4,7 +4,7 @@ define(function() {
 		// 	console.log('test updateCell');
 		// }
 		// cssInjector.add('../css/cell.css');
-		cssInjector.add('/css/chs.css?v=0117');
+		// cssInjector.add('/css/chs.css?v=0117');
 		speedService.unbindHandleClick();
 		speedService.init();
 	}

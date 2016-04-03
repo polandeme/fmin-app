@@ -14,6 +14,7 @@ gulp.task('less', function() {
 gulp.task('concat', function() {
 	gulp.src([
 		'./www/css/base.css',
+		'./www/css/base.css',
 		'./www/css/style.css'
 	])
 	.pipe(concat('main.css'))

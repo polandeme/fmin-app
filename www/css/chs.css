@@ -20,33 +20,37 @@
   font-size: 2rem;
   color: #FAEBD7;
 }
-.bar-header .time-down {
+.chs-wrap {
+  background: #E7E0B2 !important;
+  color: #8F7F4D !important;
+}
+.chs-wrap .bar-header .time-down {
   font-size: 0;
   text-align: left;
 }
-.time-down-num,
-.time-unit,
-.time-down-ms-num {
+.chs-wrap .time-down-num,
+.chs-wrap .time-unit,
+.chs-wrap .time-down-ms-num {
   justify-content: center;
   align-items: center;
   font-size: 30px;
   color: #9B8C5B;
 }
-.time-down-dot {
+.chs-wrap .time-down-dot {
   color: #9B8C5B;
 }
-.chs-cell-warp {
+.chs-wrap .chs-cell-warp {
   top: 7%;
   height: 90%;
   margin-top: 5%;
   background-color: #332A49;
 }
-.chs-cell-group {
+.chs-wrap .chs-cell-group {
   height: 100%;
   flex-flow: row wrap;
   padding: 0;
 }
-.chs-cell-item {
+.chs-wrap .chs-cell-item {
   display: flex;
   height: 25%;
   justify-content: center;
@@ -54,22 +58,25 @@
   border: 1px solid #f1dc97;
   border-bottom: none;
 }
-.chs-cell-item {
+.chs-wrap .has-bottom-border {
+  border-bottom: 1px solid #f1dc97;
+}
+.chs-wrap .chs-cell-item {
   height: 20%;
   border-left: none;
   font-size: 2em;
   border-color: #BEB083;
 }
-.chs-cell-warp {
+.chs-wrap .chs-cell-warp {
   height: 80%;
 }
-.chs-wrap,
-.chs-cell-warp,
-.chs-header-bar {
-  background: #E7E0B2;
-  color: #8F7F4D;
+.chs-wrap .chs-wrap,
+.chs-wrap .chs-cell-warp,
+.chs-wrap .chs-header-bar {
+  background: #E7E0B2 !important;
+  color: #8F7F4D !important;
 }
-.ball {
+.chs-wrap .ball {
   width: 50px;
   height: 50px;
   border-radius: 50%;

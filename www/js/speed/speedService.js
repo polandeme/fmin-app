@@ -216,6 +216,7 @@ define(['jqueryColor'], function() {
 
       //game over 
       gameOver: function(score) {
+        alert('gameOver speedService');
         var score = $('.score').text();
         clearInterval(msTimer);
         clearInterval(sTimer);
