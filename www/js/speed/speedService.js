@@ -139,6 +139,31 @@ define(['jqueryColor'], function() {
         });
       },
 
+      handleBack: function() {
+        var self = this;
+        ionic.Platform.ready(function() {
+          if(window.cordova) {
+            document.addEventListener("backbutton", function() {
+              self.reset();
+            }, false);
+          } else {
+          }
+        });
+      },
+      reset: function() {
+        targetNum = 0;
+        score = 0;
+        count = 0;
+        n = 0; //倒计时次数；
+        this.score = 0;
+        this.totleTime = 10;
+        this.backTime = 10;
+        this.errorCount = 0; //3次错误机会
+        this.start = false; // 是否开始
+        clearInterval(msTimer);
+        clearInterval(sTimer);
+
+      },
       sucessClickAnim: function() {
         var tar = $('body');
           var i = $("<b>").text("+" + 1);
@@ -216,7 +241,6 @@ define(['jqueryColor'], function() {
 
       //game over 
       gameOver: function(score) {
-        alert('gameOver speedService');
         var score = $('.score').text();
         clearInterval(msTimer);
         clearInterval(sTimer);

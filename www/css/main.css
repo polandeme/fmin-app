@@ -60,6 +60,10 @@ a {
   justify-content: center;
   align-items: center;
   border: 1px solid #f1dc97;
+  border-bottom: none;
+}
+.chs-wrap .has-bottom-border {
+  border-bottom: 1px solid #f1dc97;
 }
 .chs-wrap .chs-cell-item {
   height: 20%;
@@ -158,7 +162,7 @@ a {
   font-weight: bold;
 }
 .menu-wrapper {
-  background-image: url(../img/menu_bg.png);
+  background-image: url(../img/b1.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

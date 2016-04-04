@@ -246,7 +246,6 @@ define(['jqueryColor'], function() {
 						if(secTime > 0) { //bug
 							counter = 100;
 						} else {
-							alert('test');
 							maxScoreService.stroeMaxScore($('.score').text(), type);
 							self.unbindHandleClick();
 							clearInterval(msTimer);
