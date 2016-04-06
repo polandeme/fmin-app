@@ -3,17 +3,21 @@ define(['jqueryColor'], function() {
     var type = 'chs';
     var sTimer = null; // timeInterval timer
     var msTimer = null; 
+    var SuccessCounter = 0; //全局正确次数 全局变量大驼峰
+    var ErrCounter = 0; //全局错误次数 
     var obj ={
       score: 0, 
-      totleTime: 10,
-      backTime: 10,
+      totleTime: 100,
+      backTime: 100,
       errorCount : 0, //3次错误机会
       start: false, // 是否开始
       initCell: function() {
         this.score = 0;
-        this.totleTime = 10;
+        this.totleTime = 100;
         this.errorCount = 0; //3次错误机会
-        this.backTime = 10;
+        this.backTime = 100;
+        SuccessCounter = 0; //全局正确次数 全局变量大驼峰
+        ErrCounter = 0; //全局错误次数
         var list = $('.chs-cell-item');
         var arr = [];
         var len = list.length;
@@ -35,10 +39,16 @@ define(['jqueryColor'], function() {
         $('body').on('click', '.chs-cell-item', function() {
         // self.totleTime = $('.time-down-num').text();
           if($(this).text() == min) {
+            SuccessCounter++;
             min++;
             max++;
             obj.score++;
-            if(min == 3 || min == 7) {
+            // SuccessCounter % 5 == Math.round(Math.randon() * 4)
+            var numArr = [0,1,2,3,4];
+            console.log(SuccessCounter % 5);
+            // console.log(Math.round(Math.random() * 5));
+            if(SuccessCounter % 3 == Math.round(Math.random() * 5)) {
+              console.log('dropBall');
               self.dropBall();
             }
             $(this).text(max);
@@ -47,6 +57,7 @@ define(['jqueryColor'], function() {
           } else {
             var that = $(this);
             if(self.start) {
+              ErrCounter++;
               self.errorClickAnim(that);
             }            
           }
@@ -58,6 +69,7 @@ define(['jqueryColor'], function() {
         this.initCell();
         this.updateCell();
         this.touchStart();
+        this.dropBall();
       },
 
       //touch start
@@ -182,9 +194,16 @@ define(['jqueryColor'], function() {
       // animate ball to add time
 
       //extTime 增加的菜单时间
+      //彩蛋策略：
+      /**
+       *  1. 球分数4-9分之间
+       *  2. 特殊彩蛋，每2-8个有一个特殊彩蛋(炸弹和时间的比例一样)
+       *  3. 下个彩蛋出来之后，上一个立刻隐藏。
+       * 
+       */
       dropBall: function(extTime) {
         // var extTime = extTime || 3;
-
+        console.log('dropBall - extTime');
         var extTime = Math.round(Math.random() * 8) + 1;
         //代优化， 宽度配置
         var randomLeft = Math.round(Math.random() * (window.innerWidth - $('.ball').width())); 
@@ -193,11 +212,11 @@ define(['jqueryColor'], function() {
         var time = 10 - extTime; //time = 10 - added
 
 
-        $('body').append(dom);
+        $('.pane').append(dom);
         var height = window.innerHeight;
         $('.ball').css('left', randomLeft + 'px').animate({
           top: "+=" + height
-        }, 9 * 1000);
+        }, 10000);
         this.getBall();
       }, //end dropBalll
 
