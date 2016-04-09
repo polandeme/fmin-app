@@ -290,6 +290,19 @@ a {
   border-color: #8A98BA;
   border-radius: 3px;
 }
+.click-right-ani {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation: mymove 5s infinite;
+}
+@keyframes slidein {
+  from {
+    box-shadow: 5px 0 5px #999 inset, 0 5px 5px #999 inset, -5px -5px 0px #ccc inset, -5px 0 5px #ccc inset;
+  }
+  to {
+    box-shadow: none;
+  }
+}
 .ret-warp-content {
   flex-flow: row wrap;
   background: #717877;
