@@ -4,7 +4,7 @@
 @import "speed.less";
 
 @bg-color: #332A49;
-@grid-border-color: #f1dc97;
+@grid-border-color: #d5d3d3;
 @score-bg-color: #468EC9;
 @chs-bg-color: #E7E0B2;
 @chs-grid-border-color: #BEB083;
@@ -42,6 +42,7 @@
   background-image: none !important;
   border-bottom: none !important;
   background-color: @bg-color;
+  background-color: #fbfbfb;
 }
 .base-header-bar {
   height: 10%;
@@ -49,7 +50,7 @@
 .pause-btn {
   text-align: left;
   border: none;
-  color: #d5dbe3;
+  color: #606060;
 }
 .bar-header {
   // border: 1px solid red;
@@ -58,6 +59,9 @@
 .time-down {
   font-size: 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .time-down-num, .time-unit, .time-down-ms-num {
   text-align: center;
@@ -65,7 +69,7 @@
   align-items: center;
   font-size: 30px;
   // color: #D0D102;
-  color: #FECA52;
+  color: #606060;
 }
 .time-down-ms-num {
   display: inline-block;
@@ -77,7 +81,7 @@
 }
 .time-down-dot {
   font-size: 23px;
-  color: #f1dc97;
+  color: #606060;
   font-weight: 600;
   border-radius: 50%;
 }
@@ -90,15 +94,16 @@
   justify-content: flex-end;
   align-items: center;
   display: flex;
-  color: #E0E0F8;
-    font-weight: 600;
+  color: #606060;
+  font-weight: 600;
 }
 
 .base-cell-warp {
   top: 10%;
   height: 90%;
   // margin-top: 5%;
-  background-color: @bg-color;
+  // background-color: @bg-color;
+  background-color: #f1f0f0;
   // border: 1px solid blue;
   margin: 0;
   padding: 0;
@@ -132,8 +137,13 @@
 .has-bottom-border {
   border-bottom: 1px solid @grid-border-color;
 }
+<<<<<<< HEAD
 .base-cell-item span {
   color: #E0E0F8;
+=======
+.base-cell-item span, .chs-cell-item span{
+  color: #5f5d5d;
+>>>>>>> 39d69d870b80fdc3aa9bfb61b5dff9a9721db048
   font-size: 2em;
   font-weight: 600;
 }
@@ -151,6 +161,21 @@
   border-radius: 3px;
 }
 
+.click-right-ani {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation:mymove 5s infinite;
+  // box-shadow: 5px 0 5px #999 inset,0 5px 5px #999 inset,-5px -5px 0px #ccc inset,-5px 0 5px #ccc inset;
+}
+@keyframes slidein {
+  from {
+  box-shadow: 5px 0 5px #999 inset,0 5px 5px #999 inset,-5px -5px 0px #ccc inset,-5px 0 5px #ccc inset;
+  }
+
+  to {
+  box-shadow: none;
+  }
+}
 
 //result score page
 .ret-warp-content {
