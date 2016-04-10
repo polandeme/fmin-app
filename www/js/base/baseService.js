@@ -101,6 +101,8 @@ define(['jqueryColor'], function() {
 					var score = $('.score').text();
 					score++;
 					$('.score').text(score);
+					$('.base-cell-item').removeClass('click-right-ani');
+					$('.right-cell').addClass('click-right-ani');
 					self.sucessClickAnim();
 					var curNum = parseInt($('.right-cell').attr('value'));
 					$(this).attr('value', -1).html('').removeClass('has-num right-cell');

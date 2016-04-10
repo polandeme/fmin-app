@@ -73,10 +73,6 @@ a {
   height: 25%;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-=======
-  border: 1px solid #d5d3d3;
->>>>>>> 39d69d870b80fdc3aa9bfb61b5dff9a9721db048
   border-bottom: none;
 }
 .chs-wrap .has-bottom-border {
@@ -294,14 +290,9 @@ a {
 .has-bottom-border {
   border-bottom: 1px solid #d5d3d3;
 }
-<<<<<<< HEAD
-.base-cell-item span {
-  color: #E0E0F8;
-=======
 .base-cell-item span,
 .chs-cell-item span {
   color: #5f5d5d;
->>>>>>> 39d69d870b80fdc3aa9bfb61b5dff9a9721db048
   font-size: 2em;
   font-weight: 600;
 }
@@ -314,9 +305,8 @@ a {
   border-radius: 3px;
 }
 .click-right-ani {
-  animation-duration: 3s;
+  animation-duration: 300ms;
   animation-name: slidein;
-  animation: mymove 5s infinite;
 }
 @keyframes slidein {
   from {
