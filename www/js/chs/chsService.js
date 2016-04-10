@@ -7,15 +7,15 @@ define(['jqueryColor'], function() {
     var ErrCounter = 0; //全局错误次数 
     var obj ={
       score: 0, 
-      totleTime: 100,
-      backTime: 100,
+      totleTime: 10,
+      backTime: 10,
       errorCount : 0, //3次错误机会
       start: false, // 是否开始
       initCell: function() {
         this.score = 0;
-        this.totleTime = 100;
+        this.totleTime = 10;
         this.errorCount = 0; //3次错误机会
-        this.backTime = 100;
+        this.backTime = 10;
         SuccessCounter = 0; //全局正确次数 全局变量大驼峰
         ErrCounter = 0; //全局错误次数
         var list = $('.chs-cell-item');
@@ -26,7 +26,7 @@ define(['jqueryColor'], function() {
         }
         for(i = 0; i < len; i++) {
           var index = Math.floor(Math.random() * arr.length); // [0, 25)
-          list.eq(i).text(arr[index]);
+          list.eq(i).find('.cell-data').text(arr[index]);
           arr.splice(index, 1);
         }
 
@@ -69,7 +69,7 @@ define(['jqueryColor'], function() {
         this.initCell();
         this.updateCell();
         this.touchStart();
-        this.dropBall();
+        // this.dropBall();
       },
 
       //touch start
@@ -243,7 +243,7 @@ define(['jqueryColor'], function() {
         clearInterval(sTimer);
         maxScoreService.stroeMaxScore(score, type);
         this.unbindHandleClick();
-        $window.location.href = '#/max-score';
+        // $window.location.href = '#/max-score';
       }
 
 
