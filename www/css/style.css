@@ -23,8 +23,14 @@ a {
   font-size: 2rem;
   color: #FAEBD7;
 }
+.chs-wrap,
+.chs-cell-warp,
+.chs-header-bar {
+  color: #8F7F4D !important;
+}
 .chs-wrap {
-  background: #E7E0B2 !important;
+  background-image: url(http://img.zcool.cn/community/033c04f554c74ec00000158fc958579.jpg@600w_1l_2o);
+  background-size: cover;
   color: #8F7F4D !important;
 }
 .chs-wrap .bar-header .time-down {
@@ -46,10 +52,9 @@ a {
   top: 7%;
   height: 90%;
   margin-top: 5%;
-  background-color: #332A49;
 }
 .chs-wrap .chs-cell-warp .cell-data {
-  border-radius: 5px;
+  font-size: 100%;
   /* font-weight: 600; */
   background: #F5FFC0;
   width: 100%;
@@ -59,6 +64,8 @@ a {
   vertical-align: middle;
   justify-content: center;
   display: flex;
+  background: #FF5B00;
+  opacity: .5;
 }
 .chs-wrap .chs-cell-warp .has-bottom-border {
   border-bottom: none;
@@ -82,16 +89,11 @@ a {
   height: 20%;
   border-left: none;
   font-size: 2em;
+  padding: 0;
   border-color: #BEB083;
 }
 .chs-wrap .chs-cell-warp {
   height: 80%;
-}
-.chs-wrap .chs-wrap,
-.chs-wrap .chs-cell-warp,
-.chs-wrap .chs-header-bar {
-  background: #E7E0B2 !important;
-  color: #8F7F4D !important;
 }
 .chs-wrap .ball {
   width: 50px;
@@ -189,8 +191,7 @@ a {
 .menu-wrapper .cell-item a {
   color: #efecc1;
 }
-.base-wrap,
-.chs-wrap {
+.base-wrap {
   background: #332A49;
 }
 .base-header-bar,
@@ -306,9 +307,19 @@ a {
 }
 .click-right-ani {
   animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
   animation-name: slidein;
+  -webkit-animation-name: slidein;
 }
 @keyframes slidein {
+  from {
+    box-shadow: 5px 0 5px #999 inset, 0 5px 5px #999 inset, -5px -5px 0px #ccc inset, -5px 0 5px #ccc inset;
+  }
+  to {
+    box-shadow: none;
+  }
+}
+@-webkit-keyframes slidein {
   from {
     box-shadow: 5px 0 5px #999 inset, 0 5px 5px #999 inset, -5px -5px 0px #ccc inset, -5px 0 5px #ccc inset;
   }

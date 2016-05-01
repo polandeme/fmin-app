@@ -7,8 +7,16 @@
 @chs-bg-color: #E7E0B2;
 @chs-grid-border-color: #BEB083;
 
+  .chs-wrap, .chs-cell-warp, .chs-header-bar {
+    // background: @chs-bg-color !important;
+    color: #8F7F4D !important;
+  }
+
+
 .chs-wrap  {
-  background: @chs-bg-color !important;
+  // background: @chs-bg-color !important;
+  background-image: url(http://img.zcool.cn/community/033c04f554c74ec00000158fc958579.jpg@600w_1l_2o);
+  background-size: cover;
   color: #8F7F4D !important;
   .bar-header 
   .time-down {
@@ -31,10 +39,10 @@
     top: 7%;
     height: 90%;
     margin-top: 5%;
-    background-color: @bg-color;
+    // background-color: @bg-color;
     .cell-data {
-      // font-size: 14px;
-      border-radius: 5px;
+      font-size: 100%;
+      // border-radius: 5px;
       /* font-weight: 600; */
       background: #F5FFC0;
       width: 100%;
@@ -44,6 +52,8 @@
       vertical-align: middle;
       justify-content: center;
       display: flex;
+      background: #FF5B00;
+      opacity: .5;
     }
     .has-bottom-border {
       border-bottom: none;
@@ -70,15 +80,13 @@
     height: 20%;
     border-left: none;
     font-size: 2em;
+    padding: 0;
     border-color: @chs-grid-border-color;
   }
   .chs-cell-warp {
     height: 80%;
   }
-  .chs-wrap, .chs-cell-warp, .chs-header-bar {
-    background: @chs-bg-color !important;
-    color: #8F7F4D !important;
-  }
+
 
   .ball {
     width: 50px;

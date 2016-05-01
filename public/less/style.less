@@ -31,7 +31,7 @@
 
 
 //base.less 
-.base-wrap, .chs-wrap{
+.base-wrap {
   background: @bg-color;
 }
 .base-header-bar, .chs-header-bar {
@@ -159,7 +159,9 @@
 
 .click-right-ani {
   animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
   animation-name: slidein;
+  -webkit-animation-name: slidein;
   // animation:mymove 5s infinite;
   // box-shadow: 5px 0 5px #999 inset,0 5px 5px #999 inset,-5px -5px 0px #ccc inset,-5px 0 5px #ccc inset;
 }
@@ -172,7 +174,15 @@
   box-shadow: none;
   }
 }
+@-webkit-keyframes slidein {
+  from {
+  box-shadow: 5px 0 5px #999 inset,0 5px 5px #999 inset,-5px -5px 0px #ccc inset,-5px 0 5px #ccc inset;
+  }
 
+  to {
+  box-shadow: none;
+  }
+}
 //result score page
 .ret-warp-content {
   flex-flow: row wrap;
