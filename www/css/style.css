@@ -36,6 +36,7 @@ a {
 .chs-wrap .bar-header .time-down {
   font-size: 0;
   text-align: left;
+  justify-content: flex-start !important;
 }
 .chs-wrap .time-down-num,
 .chs-wrap .time-unit,
@@ -56,7 +57,7 @@ a {
 .chs-wrap .chs-cell-warp .cell-data {
   font-size: 100%;
   /* font-weight: 600; */
-  background: #F5FFC0;
+  background: #c4bb7e;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -66,6 +67,7 @@ a {
   display: flex;
   background: #FF5B00;
   opacity: .5;
+  font-size: 1em;
 }
 .chs-wrap .chs-cell-warp .has-bottom-border {
   border-bottom: none;

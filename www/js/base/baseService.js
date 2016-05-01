@@ -114,10 +114,14 @@ define(['jqueryColor'], function() {
 				})
 			},
 			handleBack: function() {
+				var self = this;
 				ionic.Platform.ready(function() {
 					if(window.cordova) {
 						document.addEventListener("backbutton", function() {
-							this.reset();
+							self.reset();
+							clearInterval(sTimer);
+							clearInterval(Timer);
+							self.unbindHandleClick();
 						}, false);
 					} else {
 					}
@@ -129,11 +133,9 @@ define(['jqueryColor'], function() {
 				return newNum + curNum;
 			},
 			reDraw: function(curNum) {
-				// alert('reDraw');
 				var n = n || 15;
 				var index = Math.floor(Math.random() * n);
 				var num = Math.floor(Math.random() * 10);
-				// var curNum = parseInt($('.right-cell').text());
 				var num = this.randomAgain(curNum);
 				var wrong_num = parseInt($('.wrong-cell').attr('value'));
 
