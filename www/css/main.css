@@ -66,12 +66,9 @@ a {
   vertical-align: middle;
   justify-content: center;
   display: flex;
-<<<<<<< HEAD
   background: #FF5B00;
   opacity: .5;
-=======
   font-size: 1em;
->>>>>>> 5fbc1f782f513e088d392e10834179d39fb3f92e
 }
 .chs-wrap .chs-cell-warp .has-bottom-border {
   border-bottom: none;
