@@ -1920,3 +1920,83 @@ INFO: loading config from /home/v/.config/ss/config.json
 2016-02-18 08:10:51 WARNING  timed out: mtalk.google.com:5228
 2016-02-18 08:10:51 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:53661
 2016-02-18 08:12:23 INFO     connecting clients4.google.com:443 from 127.0.0.1:59551
+INFO: loading config from /home/v/.config/ss/config.json
+2016-05-04 09:33:20 INFO     loading libcrypto from libcrypto.so.1.0.0
+2016-05-04 09:33:20 INFO     starting local at 127.0.0.1:1080
+2016-05-04 09:33:20 ERROR    [Errno 98] Address already in use
+INFO: loading config from /home/v/.config/ss/config.json
+2016-05-04 10:31:17 INFO     loading libcrypto from libcrypto.so.1.0.0
+2016-05-04 10:31:17 INFO     starting local at 127.0.0.1:1080
+2016-05-04 10:31:18 INFO     connecting www.google.com:443 from 127.0.0.1:55216
+2016-05-04 10:31:18 INFO     connecting plus.google.com:443 from 127.0.0.1:55217
+2016-05-04 10:31:19 INFO     connecting www.google.com:443 from 127.0.0.1:55220
+2016-05-04 10:31:20 INFO     connecting www.google.com:443 from 127.0.0.1:55222
+2016-05-04 10:31:21 INFO     connecting www.google.com:443 from 127.0.0.1:55224
+2016-05-04 10:31:22 INFO     connecting www.google.com:443 from 127.0.0.1:55226
+2016-05-04 10:31:22 INFO     connecting www.google.com:443 from 127.0.0.1:55228
+2016-05-04 10:31:27 INFO     connecting ajax.googleapis.com:443 from 127.0.0.1:55232
+2016-05-04 10:31:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55234
+2016-05-04 10:31:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55235
+2016-05-04 10:31:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55236
+2016-05-04 10:31:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55237
+2016-05-04 10:31:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55238
+2016-05-04 10:31:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55239
+2016-05-04 10:31:27 INFO     connecting js.honeybadger.io:443 from 127.0.0.1:55246
+2016-05-04 10:31:27 INFO     connecting js.honeybadger.io:443 from 127.0.0.1:55247
+2016-05-04 10:31:27 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:55248
+2016-05-04 10:31:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:55278
+2016-05-04 10:31:43 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:55280
+2016-05-04 10:31:53 INFO     connecting clients1.google.com:443 from 127.0.0.1:55287
+2016-05-04 10:31:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55294
+2016-05-04 10:31:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55296
+2016-05-04 10:31:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55298
+2016-05-04 10:31:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55300
+2016-05-04 10:31:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55302
+2016-05-04 10:31:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55303
+2016-05-04 10:31:57 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:55304
+2016-05-04 10:32:17 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:55324
+2016-05-04 10:32:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55328
+2016-05-04 10:32:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55330
+2016-05-04 10:32:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55332
+2016-05-04 10:32:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55334
+2016-05-04 10:32:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55335
+2016-05-04 10:32:27 INFO     connecting js.honeybadger.io:443 from 127.0.0.1:55338
+2016-05-04 10:32:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55349
+2016-05-04 10:32:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55351
+2016-05-04 10:32:57 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55353
+2016-05-04 10:32:58 INFO     connecting clients1.google.com:443 from 127.0.0.1:55357
+2016-05-04 10:33:04 INFO     connecting clients1.google.com:443 from 127.0.0.1:55359
+2016-05-04 10:33:04 INFO     connecting clients1.google.com:443 from 127.0.0.1:55361
+2016-05-04 10:33:07 INFO     connecting clients1.google.com:443 from 127.0.0.1:55363
+2016-05-04 10:33:07 INFO     connecting clients1.google.com:443 from 127.0.0.1:55365
+2016-05-04 10:33:12 INFO     connecting clients1.google.com:443 from 127.0.0.1:55367
+2016-05-04 10:33:27 INFO     connecting d13yacurqjgara.cloudfront.net:443 from 127.0.0.1:55381
+2016-05-04 10:33:28 INFO     connecting clients1.google.com:443 from 127.0.0.1:55383
+2016-05-04 10:33:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:55385
+2016-05-04 10:33:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:55387
+2016-05-04 10:33:37 INFO     connecting clients1.google.com:443 from 127.0.0.1:55390
+2016-05-04 10:33:37 INFO     connecting clients1.google.com:443 from 127.0.0.1:55392
+2016-05-04 10:33:42 INFO     connecting clients1.google.com:443 from 127.0.0.1:55394
+2016-05-04 10:33:46 INFO     connecting clients4.google.com:443 from 127.0.0.1:55397
+2016-05-04 10:36:27 INFO     connecting clients1.google.com:443 from 127.0.0.1:55401
+2016-05-04 10:36:32 INFO     connecting clients1.google.com:443 from 127.0.0.1:55402
+2016-05-04 10:36:32 INFO     connecting clients1.google.com:443 from 127.0.0.1:55403
+2016-05-04 10:36:32 INFO     connecting clients1.google.com:443 from 127.0.0.1:55404
+2016-05-04 10:36:32 INFO     connecting clients1.google.com:443 from 127.0.0.1:55405
+2016-05-04 10:36:32 INFO     connecting mtalk.google.com:443 from 127.0.0.1:55406
+2016-05-04 10:37:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:55438
+2016-05-04 10:37:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:55439
+2016-05-04 10:37:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:55440
+2016-05-04 10:37:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:55441
+2016-05-04 10:37:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:55442
+2016-05-04 10:37:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:55443
+2016-05-04 10:37:44 ERROR    [Errno 104] Connection reset by peer
+2016-05-04 10:37:44 ERROR    [Errno 104] Connection reset by peer
+2016-05-04 10:37:44 ERROR    [Errno 104] Connection reset by peer
+2016-05-04 10:37:44 ERROR    [Errno 104] Connection reset by peer
+2016-05-04 10:40:12 ERROR    [Errno 104] Connection reset by peer
+2016-05-04 10:40:12 INFO     connecting clients4.google.com:443 from 127.0.0.1:55508
+2016-05-04 10:41:05 INFO     connecting mtalk.google.com:5228 from 127.0.0.1:55519
+2016-05-04 10:41:57 INFO     connecting clients4.google.com:443 from 127.0.0.1:55525
+2016-05-04 10:44:20 INFO     connecting clients4.google.com:443 from 127.0.0.1:55548
+2016-05-04 10:46:06 INFO     connecting clients4.google.com:443 from 127.0.0.1:55566

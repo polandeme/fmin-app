@@ -9,7 +9,7 @@ define(['angular',
 														'$cordovaFileTransfer',
 														'$http', 
 														'$location', 'fmin.maxScoreService', baseService]);
-				baseModule.controller('fmin.baseController', ['$scope', '$location', '$ionicPopup', 'cssInjector', 'fmin.baseService', baseController]);
+				baseModule.controller('fmin.baseController', ['$scope', '$location', '$window', '$ionicPopup', 'cssInjector', 'fmin.baseService', baseController]);
 
 			return baseModule;
 		})
