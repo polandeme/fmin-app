@@ -13,7 +13,7 @@ define(function () {
         var helpTips = function() {
             var popTpl = '<div class="main"> \
             				<div class="main-text"> \
-            					以最快的速度点击出现的两个数字中的<span>较小</span>的一个。\
+            					用最快的速度点击出现的两个数字中的<span>较小</span>的一个。\
             				</div> \
             				<div> \
             				<div class="text-easy">很简单，但是很耐玩。</div>\
@@ -30,14 +30,12 @@ define(function () {
             });
 
 	        $scope.closeHelp = function () {
-				$window.localStorage.setItem('know', 'true');
+				$window.localStorage.setItem('know-base', 'true');
 				popup.close();
 	        };
 		}
 		// window.localStorage.setItem('know': 'false');
-		var know = window.localStorage.getItem('know');
-		console.log(know);
-		console.log(typeof know);
+		var know = window.localStorage.getItem('know-base');
 		if(know != 'true') {
         	helpTips();
 		}

@@ -7,6 +7,8 @@ define(['angular',
 				chsModule.controller('fmin.chsController', 
 									[
 									 '$scope',
+									 '$window', 
+									 '$ionicPopup',
 									 'cssInjector',
 									 'fmin.chsService',
 									 chsController
