@@ -28,7 +28,8 @@ define(['angular',
         'maxScore/maxScoreModule',
         'chs/chsModule',
         'speed/speedModule',
-        'home/homeModule'
+        'home/homeModule',
+        'rank/rankModule'
        ], function(ng) {
         'use strict';
         return ng.module('fmin', [
@@ -39,6 +40,7 @@ define(['angular',
           'fmin.maxScoreModule',
           'fmin.chsModule',
           'fmin.speedModule',
-          'fmin.homeModule'
+          'fmin.homeModule',
+          'fmin.rankModule'
         ]);
 });

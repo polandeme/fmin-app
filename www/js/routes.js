@@ -30,6 +30,11 @@ define(['./app'], function(app) {
 				cache: false,
 				templateUrl: 'templates/chs.html'
 			})
+			.state('rank', {
+				url: '/rank',
+				cache: false,
+				templateUrl: 'templates/rank.html'
+			})
 			.state('speed', {
 				url: '/speed',
 				cache: false,
