@@ -38,9 +38,9 @@ define(function() {
 		}
 		// window.localStorage.setItem('know': 'false');
 		var know = window.localStorage.getItem('know-chs');
-		if(know != 'true') {
+		// if(know != 'true') {
         	helpTips();
-		}
+		// }
 
 	}
 })

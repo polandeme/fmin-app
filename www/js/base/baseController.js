@@ -34,12 +34,10 @@ define(function () {
 				popup.close();
 	        };
 		}
-		// window.localStorage.setItem('know': 'false');
 		var know = window.localStorage.getItem('know-base');
-		if(know != 'true') {
+		// if(know != 'true') {
         	helpTips();
-		}
-
+		// }
 
 		// $scope.reloadPage = $route.reload();
 		baseService.handleBack();

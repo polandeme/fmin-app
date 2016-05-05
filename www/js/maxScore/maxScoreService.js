@@ -1,5 +1,5 @@
 define(function() {
-	var maxScoreService = function() {
+	var maxScoreService = function($http) {
 		var curType = 'base';
 		var obj = {
 			set2LocalStorage: function(key, value) {
@@ -38,7 +38,6 @@ define(function() {
 			readMaxScore: function() {
 				var score = JSON.parse(window.localStorage.getItem('score'));//.stringfly()
 				var score = score && score[curType];
-				console.log(score);
 				var maxScore = score ? score.maxScore : 0;//window.localStorage.getItem('maxScore') || 0;
 				return maxScore;
 			},
@@ -51,6 +50,26 @@ define(function() {
 			},
 			returnType: function() {
 				return curType;
+			},
+			postScore: function() {
+				var data = {};
+				data.name = window.localStorage.getItem('name') || '123';
+				var score = JSON.parse(window.localStorage.getItem('score'));
+				console.log(score);
+				data.max_base = (score.base && score.base.maxScore) || 0;
+				data.max_chs = (score.chs && score.chs.maxScore) || 0;
+				data.max_speed = (score.speed && score.speed.maxScore) || 0;
+				console.log(data);
+				console.log('-------------------');
+				$http({
+					url: "http://192.168.0.66:3000/api/v1/rank/postScore/",
+					method: "POST",
+					data: data
+					}).success(function(data, status, headers, config) {
+						console.log('post success');
+					}).error(function(data, status, headers, config) {
+						console.log('post error');
+				});
 			}
 
 		}

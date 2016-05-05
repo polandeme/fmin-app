@@ -253,7 +253,7 @@ define(['jqueryColor'], function() {
                             maxScoreService.stroeMaxScore($('.score').text(), type);
                             self.unbindHandleClick();
                             clearInterval(msTimer);
-                            // $window.location.href = '#/max-score';
+                            $window.location.href = '#/max-score';
                         }
                     }
                     --counter; //位置

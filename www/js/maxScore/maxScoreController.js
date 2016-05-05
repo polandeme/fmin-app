@@ -8,6 +8,7 @@ define(function () {
 			$location.path('/home');
 
 		}
+		maxScoreService.postScore();
 		$scope.goBase = function() {
 			$location.path('/' + type);
 

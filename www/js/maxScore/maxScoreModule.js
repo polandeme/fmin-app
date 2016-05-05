@@ -3,7 +3,7 @@ define(['angular',
 		'maxScore/maxScoreService'
 		], function(angular, maxScoreController, maxScoreService) {
 			var maxScoreModule = angular.module('fmin.maxScoreModule', []);
-				maxScoreModule.factory('fmin.maxScoreService', [maxScoreService]);
+				maxScoreModule.factory('fmin.maxScoreService', ['$http', maxScoreService]);
 				maxScoreModule.controller('fmin.maxScoreController', 
 										[
 										 '$scope', 

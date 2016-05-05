@@ -243,7 +243,7 @@ define(['jqueryColor'], function() {
         clearInterval(sTimer);
         maxScoreService.stroeMaxScore(score, type);
         this.unbindHandleClick();
-        // $window.location.href = '#/max-score';
+        $window.location.href = '#/max-score';
       }
 
 
