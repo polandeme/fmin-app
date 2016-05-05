@@ -185,6 +185,15 @@ a {
 .menu-wrapper .cell-item a {
   color: #efecc1;
 }
+.username {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: beige;
+}
+.home-pop .main input {
+  margin-bottom: 15px;
+}
 .base-help .popup {
   width: 290px;
 }

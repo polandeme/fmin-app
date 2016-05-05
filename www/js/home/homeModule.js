@@ -5,8 +5,8 @@ define(['angular',
 			var homeModule = angular.module('fmin.homeModule', []);
 				homeModule.factory('fmin.homeService', [
 														'$window',
-														'$location',  '$cordovaDevice', 'fmin.maxScoreService', homeService]);
-				homeModule.controller('fmin.homeController', ['$scope', '$location', '$window', '$ionicPopup', 'cssInjector','fmin.homeService', homeController]);
+														'$location', 'fmin.maxScoreService', homeService]);
+				homeModule.controller('fmin.homeController', ['$scope', '$cordovaDevice', '$location', '$window', '$ionicPopup', 'cssInjector','fmin.homeService', homeController]);
 
 			return homeModule;
 		})

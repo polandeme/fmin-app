@@ -1,5 +1,5 @@
 define(function () {
-	return function ($scope, $location, $window, $ionicPopup, cssInjector, homeService) {
+	return function ($scope, $cordovaDevice, $location, $window, $ionicPopup, cssInjector, homeService) {
 
 		// <input type="text" id="word" placeholder="写下此时的心情或者想说的（漂流）" ng-model="data.word"> \
 		 var helpTips = function() {
@@ -16,11 +16,14 @@ define(function () {
             });
 
             console.log($scope.data);
-            homeService.getDevice();
+
+            // homeService.getDevice();
+
 	        $scope.closeHelp = function () {
 	        	var name = document.querySelector('#name').value;
 	        	if(name) {
 	        		window.localStorage.setItem('name', name);
+					$scope.username = name;
 					popup.close();
 	        	} else {
 	        		alert('请填写姓名');
@@ -28,9 +31,25 @@ define(function () {
 	        };
 		}
 		var name = window.localStorage.getItem('name');
+		$scope.username = name;
 		if(!name) {
         	helpTips();
         }
+        $scope.writeName = helpTips;
+          document.addEventListener("deviceready", function () {
+			    var device = $cordovaDevice.getDevice();
 
+			    var cordova = $cordovaDevice.getCordova();
+
+			    var model = $cordovaDevice.getModel();
+
+			    var platform = $cordovaDevice.getPlatform();
+
+			    var uuid = $cordovaDevice.getUUID();
+
+			    var version = $cordovaDevice.getVersion();
+                window.localStorage.setItem('uuid', uuid);
+
+			  }, false);
 	}
 });

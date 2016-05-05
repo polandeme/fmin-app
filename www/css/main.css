@@ -189,6 +189,42 @@ a {
 .base-help .popup {
   width: 290px;
 }
+.base-help .main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.base-help .main-text {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  color: #244555;
+  line-height: 1.3;
+  font-size: 18px;
+}
+.base-help .main-text span {
+  font-size: 16px;
+  color: #000;
+}
+.base-help .text-easy {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.base-help .btn-wrap {
+  width: 100%;
+  text-align: center;
+}
+.base-help .know {
+  margin: 0 auto;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #F1F6FB;
+  background: #244555;
+  box-shadow: 0px 2px 7px grey;
+}
+.base-help .notes {
+  margin-top: 15px;
+  color: #FF3636;
+}
 .base-wrap {
   background: #332A49;
 }

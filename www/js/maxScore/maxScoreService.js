@@ -54,6 +54,7 @@ define(function() {
 			postScore: function() {
 				var data = {};
 				data.name = window.localStorage.getItem('name') || '123';
+				data.device_id = window.localStorage.getItem('uuid') || 'null';
 				var score = JSON.parse(window.localStorage.getItem('score'));
 				console.log(score);
 				data.max_base = (score.base && score.base.maxScore) || 0;
